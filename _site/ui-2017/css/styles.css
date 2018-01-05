@@ -132,7 +132,7 @@ footer {
         text-transform: uppercase;
     }
 .help-with {
-    background: #ffffff;;
+    background: #ffffff;
     padding-top: 10px;
     padding-bottom: 30px;
     text-align: center;
@@ -180,10 +180,10 @@ footer {
                 margin-top: auto;
                 text-align: left;
             }
-            .tiles > div div.button {
-                margin-top: 1em;
+            /*.tiles > div */div.button {
+                margin-top: 38px;
             }
-            .tiles > div div.button > a {
+            /*.tiles > div */div.button > a {
                 background: #F47804;
                 color: white;
                 display: inline-block;
@@ -200,13 +200,13 @@ footer {
                 -moz-box-shadow:    3px 3px 0px 0px #7fdbff;
                 box-shadow:         3px 3px 0px 0px #7fdbff;
             }
-            .tiles > div div.button > a:hover {
+            /*.tiles > div */div.button > a:hover {
                 opacity: 1;
             }
 .work {
     background: #ffffff;;
-    padding-top: 20px;
-    padding-bottom: 40px;
+    padding-top: 14px;
+    padding-bottom: 36px;
     text-align: center;
 }
     .work p {
@@ -356,7 +356,7 @@ footer {
         }
     .help-with {
         padding-top: 40px;
-        padding-bottom: 50px;
+        padding-bottom: 40px;
     }
         .tiles {
             grid-gap: 30px;
@@ -375,8 +375,8 @@ footer {
                 -moz-box-shadow:    5px 5px 0px 0px #7fdbff;
                 box-shadow:         5px 5px 0px 0px #7fdbff;
             }
-                .tiles > div div.button {
-                    margin-top: auto;
+                /*.tiles > div */div.button {
+                    margin-top: 52px;
                 }
     .work {
         padding-bottom: 54px;
