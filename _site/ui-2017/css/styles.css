@@ -81,6 +81,7 @@ body {
 }
     .outer > header > p {
         display: none;
+        line-height: 1.3125em;
     }
 
 .outer > section:nth-of-type(1) {
@@ -98,6 +99,7 @@ body {
 footer {
     color: #4b371c;
     line-height: 1.375em;
+    line-height: 1.5em;
 }
 .hero-home {
     background: #f2ebd3;
@@ -133,7 +135,7 @@ footer {
     }
 .help-with {
     background: #ffffff;
-    padding-top: 10px;
+    padding-top: 30px;
     padding-bottom: 30px;
     text-align: center;
 }
@@ -141,7 +143,8 @@ footer {
         display: grid;
         grid-gap: 20px;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        padding-top: 30px;
+        padding-top: 40px;
+        /*padding-top: 30px;*/
     }
     .no-cssgrid .tiles {
         margin-right: auto;
@@ -153,8 +156,8 @@ footer {
         .tiles > div {
             background: #f2ebd3;
             background: rgba(242,235,211,.85);
-            display: flex;
-            flex-direction: column;
+            /*display: flex;
+            flex-direction: column;*/
             padding: 1.125em;
 
             -webkit-box-shadow: 3px 3px 0px 0px #7fdbff;
@@ -181,7 +184,7 @@ footer {
                 text-align: left;
             }
             /*.tiles > div */div.button {
-                margin-top: 38px;
+                margin-top: 50px;
             }
             /*.tiles > div */div.button > a {
                 background: #F47804;
@@ -203,6 +206,25 @@ footer {
             /*.tiles > div */div.button > a:hover {
                 opacity: 1;
             }
+            .logos {
+                align-items: center;
+                display: grid;
+                grid-gap: 20px;
+                grid-template-columns: repeat(auto-fit, minmax(177px, 2fr));
+                margin-right: auto;
+                margin-left: auto;
+                max-width: 768px;
+                padding-top: 20px;
+            }
+                .logos svg,
+                .logos img {
+                    height: auto;
+                    margin-right: auto;
+                    margin-left: auto;
+                    max-height: 100px;
+                    max-width: 177px;
+                    width: auto;
+                }
 .work {
     background: #ffffff;;
     padding-top: 14px;
@@ -218,16 +240,16 @@ footer {
 .newsletter-tip {
     background: white;
     padding-top: 10px;
-    padding-right: 20px;
-    padding-bottom: 40px;
-    padding-left: 20px;
+    /*padding-right: 20px;*/
+    padding-bottom: 24px;
+    /*padding-left: 20px;*/
 }
     .newsletter-tip > div {
         background: rgba(244, 120, 4, .15);
         padding-top: 20px;
-        padding-right: 30px;
+        padding-right: 20px;
         padding-bottom: 30px;
-        padding-left: 30px;
+        padding-left: 20px;
     }
     .newsletter-tip > div > figure {
         grid-area: figure;
@@ -343,7 +365,7 @@ footer {
 
 @media all and (min-width: 600px) {
     .hero {
-        font-size: 1.25em;
+        font-size: 1.125em;
     }
     .hero-home {
         padding-top: 60px;
@@ -355,12 +377,12 @@ footer {
             /*,4px 5px 0px rgba(127, 219, 255, .9);*/
         }
     .help-with {
-        padding-top: 40px;
-        padding-bottom: 40px;
+        /*padding-top: 40px;
+        padding-bottom: 0px;*/
     }
         .tiles {
             grid-gap: 30px;
-            padding-top: 40px;
+            /*padding-top: 40px;*/
             padding-right: 0px;
             padding-left: 0px;
         }
@@ -376,24 +398,28 @@ footer {
                 box-shadow:         5px 5px 0px 0px #7fdbff;
             }
                 /*.tiles > div */div.button {
-                    margin-top: 52px;
+                    margin-top: 32px;
                 }
     .work {
         padding-top: 18px;
         padding-bottom: 54px;
     }
     .newsletter-tip {
-        padding-bottom: 60px;
+        padding-right: 20px;
+        padding-bottom: 42px;
+        padding-left: 20px;
     }
             .bio > div,
             .newsletter-tip > div {
                 align-items: center;
                 display: grid;
-                grid-column-gap: 20px;
+                grid-column-gap: 30px;
                 grid-template-columns: [text] auto [figure] 200px;
             }
             .newsletter-tip > div {
                 grid-template-columns: [figure] 160px [text] auto;
+                padding-right: 30px;
+                padding-left: 30px;
             }
             .cssgrid .newsletter-tip > div {
                 padding-top: 40px;
@@ -451,8 +477,8 @@ footer {
                 margin-bottom: 1.125em;
             }
     .bio {
-        padding-top: 80px;
-        padding-bottom: 80px;
+        /*padding-top: 80px;
+        padding-bottom: 80px;*/
     }
             .newsletter-tip > div {
                 grid-template-columns: [figure] 200px [text] auto;
