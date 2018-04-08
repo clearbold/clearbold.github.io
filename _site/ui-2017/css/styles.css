@@ -225,10 +225,10 @@ footer {
                 align-items: center;
                 display: grid;
                 grid-gap: 20px;
-                grid-template-columns: repeat(auto-fit, minmax(177px, 2fr));
+                grid-template-columns: repeat(auto-fit, minmax(144px, 2fr));
                 margin-right: auto;
                 margin-left: auto;
-                max-width: 768px;
+                max-width: 800px;
                 padding-top: 20px;
             }
                 .logos svg,
@@ -237,19 +237,28 @@ footer {
                     margin-right: auto;
                     margin-left: auto;
                     max-height: 100px;
-                    max-width: 177px;
+                    max-width: 144px;
                     width: auto;
                 }
                 .logos :nth-of-type(1) {
                     position: relative;
-                    top: 2px;
+                    top: 4px;
                 }
+
                 .logos :nth-of-type(2) {
-                    margin-top: -18px;
-                    margin-bottom: -18px;
-                }
-                .logos :last-child {
                     margin-top: 20px;
+                }
+                .logos :nth-of-type(3) {
+                    margin-top: -18px;
+                    margin-bottom: -20px;
+                }
+                .logos :nth-of-type(4) {
+                    margin-top: 17px;
+                }
+
+                .logos :nth-of-type(5) {
+                    position: relative;
+                    top: 4px;
                 }
 
 .work {
