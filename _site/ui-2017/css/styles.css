@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'permanent_markerregular';
+    src: url('/ui-2017/permanentmarker_regular_macroman/PermanentMarker-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -133,6 +140,14 @@ footer {
         text-shadow: 1px 2px 0px #7fdbff;
         text-transform: uppercase;
     }
+    .hero .handwriting {
+        color: #F47804;
+        /*font-family: 'Permanent Marker', cursive;*/
+        font-family: permanent_markerregular, cursive;
+        font-size: 22px;
+        letter-spacing: .05em;
+        line-height: 1.25em;
+    }
 .help-with {
     background: #ffffff;
     padding-top: 30px;
@@ -160,9 +175,9 @@ footer {
             flex-direction: column;*/
             padding: 1.125em;
 
-            -webkit-box-shadow: 3px 3px 0px 0px #7fdbff;
-            -moz-box-shadow:    3px 3px 0px 0px #7fdbff;
-            box-shadow:         3px 3px 0px 0px #7fdbff;
+            -webkit-box-shadow: 5px 5px 0px 0px rgba(75,55,28,.5);
+            -moz-box-shadow:    5px 5px 0px 0px rgba(75,55,28,.5);
+            box-shadow:         5px 5px 0px 0px rgba(75,55,28,.5);
         }
         .no-cssgrid .tiles > div {
             margin-bottom: 20px;
@@ -388,6 +403,9 @@ footer {
             text-shadow: 2px 3px 0px #7fdbff;
             /*,4px 5px 0px rgba(127, 219, 255, .9);*/
         }
+        .hero .handwriting {
+            font-size: 28px;
+        }
     .help-with {
         /*padding-top: 40px;
         padding-bottom: 0px;*/
@@ -405,9 +423,12 @@ footer {
             margin-bottom: 0;
         }
             .tiles > div {
-                -webkit-box-shadow: 5px 5px 0px 0px #7fdbff;
-                -moz-box-shadow:    5px 5px 0px 0px #7fdbff;
-                box-shadow:         5px 5px 0px 0px #7fdbff;
+                /*-webkit-box-shadow: 5px 5px 0px 0px #4b371c;
+                -moz-box-shadow:    5px 5px 0px 0px #4b371c;
+                box-shadow:         5px 5px 0px 0px #4b371c;*/
+                -webkit-box-shadow: 5px 5px 0px 0px rgba(75,55,28,.5);
+                -moz-box-shadow:    5px 5px 0px 0px rgba(75,55,28,.5);
+                box-shadow:         5px 5px 0px 0px rgba(75,55,28,.5);
             }
                 /*.tiles > div */div.button {
                     margin-top: 32px;
