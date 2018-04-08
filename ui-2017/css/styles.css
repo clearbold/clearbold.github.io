@@ -223,6 +223,7 @@ footer {
             }
             .logos {
                 align-items: center;
+                display: table-cell;
                 display: grid;
                 grid-gap: 20px;
                 grid-template-columns: repeat(auto-fit, minmax(144px, 2fr));
@@ -230,6 +231,7 @@ footer {
                 margin-left: auto;
                 max-width: 800px;
                 padding-top: 20px;
+                vertical-align: center;
             }
                 .logos svg,
                 .logos img {
