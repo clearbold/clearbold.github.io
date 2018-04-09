@@ -54,6 +54,7 @@ h1, h2, h3, h4 {
 .wrapper {
     margin-right: auto;
     margin-left: auto;
+    max-width: 1280px;
     padding-right: 20px;
     padding-left: 20px;
 }
@@ -86,7 +87,7 @@ body {
     padding-bottom: 16px;
     padding-left: 8px;
 }
-    .outer > header > p {
+    .outer > header > div > p {
         display: none;
         line-height: 1.3125em;
     }
@@ -374,7 +375,7 @@ footer {
     box-shadow:         inset 0 -1px 0 rgba(154, 123, 79, .3625);
 }
 
-    .outer > header > p {
+    .outer > header > div > p {
         color: rgba(255, 255, 255, .8);
         display: block;
         font-size: .9em;
@@ -384,15 +385,15 @@ footer {
         margin-right: 10px;
         width: 62.5%;
     }
-        .outer > header > p a {
+        .outer > header > div > p a {
             color: rgba(255, 255, 255, .8);
 
             -webkit-box-shadow: inset 0 -1px 0 rgba(255, 255, 255, .65);
             -moz-box-shadow:    inset 0 -1px 0 rgba(255, 255, 255, .65);
             box-shadow:         inset 0 -1px 0 rgba(255, 255, 255, .65);
         }
-        .outer > header > p a:hover,
-        .outer > header > p a:visited {
+        .outer > header > div > p a:hover,
+        .outer > header > div > p a:visited {
             color: rgba(255, 255, 255, 1);
 
             -webkit-box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 1);
@@ -483,27 +484,27 @@ footer {
                     }
 }
 @media all and (min-width: 768px) {
-    .outer > header > p {
+    .outer > header > div > p {
         color: rgba(255, 255, 255, .8);
         font-size: 1em;
         padding-top: 30px;
         margin-right: 20px;
         width: auto;
     }
-        .outer > header > p a {
+        .outer > header > div > p a {
             -webkit-box-shadow: inset 0 -2px 0 rgba(255, 255, 255, .8);
             -moz-box-shadow:    inset 0 -2px 0 rgba(255, 255, 255, .8);
             box-shadow:         inset 0 -2px 0 rgba(255, 255, 255, .8);
         }
-        .outer > header > p a:hover,
-        .outer > header > p a:visited {
+        .outer > header > div > p a:hover,
+        .outer > header > div > p a:visited {
             -webkit-box-shadow: inset 0 -2px 0 rgba(255, 255, 255, 1);
             -moz-box-shadow:    inset 0 -2px 0 rgba(255, 255, 255, 1);
             box-shadow:         inset 0 -2px 0 rgba(255, 255, 255, 1);
         }
 }
 @media all and (min-width: 960px) {
-    .outer > header > p {
+    .outer > header > div > p {
         font-size: 1.125em;
         margin-right: 40px;
         padding-top: 28px;
