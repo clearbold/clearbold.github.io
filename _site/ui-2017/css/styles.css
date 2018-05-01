@@ -223,26 +223,25 @@ footer {
                 opacity: 1;
             }
             .logos {
-                align-items: center;
-                display: grid;
-                grid-gap: 20px;
-                grid-template-columns: repeat(auto-fit, minmax(144px, 2fr));
+                /*align-items: center;*/
+                /*display: grid;*/
+                /*grid-gap: 20px;*/
+                /*grid-template-columns: repeat(auto-fit, minmax(144px, 2fr));*/
                 margin-right: auto;
                 margin-left: auto;
-                max-width: 800px;
-                padding-top: 20px;
+                max-width: 960px;
+                padding-top: 50px;
             }
                 .logos svg,
                 .logos img {
-                    display: block;
+                    display: inline-block;
                     height: auto;
                     margin-right: auto;
                     margin-left: auto;
-                    max-height: 100px;
-                    max-width: 144px;
+                    max-width: 192px;
                     width: auto;
                 }
-                .logos :nth-of-type(1) {
+                /*.logos :nth-of-type(1) {
                     position: relative;
                     top: 4px;
                 }
@@ -261,7 +260,7 @@ footer {
                 .logos :nth-of-type(5) {
                     position: relative;
                     top: 4px;
-                }
+                }*/
 
 .work {
     background: #ffffff;;
