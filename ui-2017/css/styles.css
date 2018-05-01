@@ -226,6 +226,8 @@ footer {
                 -webkit-box-shadow: 3px 3px 0px 0px #7fdbff;
                 -moz-box-shadow:    3px 3px 0px 0px #7fdbff;
                 box-shadow:         3px 3px 0px 0px #7fdbff;
+                -webkit-transition: all .25s;
+                transition: all .25s;
             }
             /*.tiles > div */div.button > a:hover {
                 opacity: 1;
