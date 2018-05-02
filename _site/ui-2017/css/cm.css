@@ -121,6 +121,8 @@ p a:hover {
             .cm-plugins .plugins > a:hover .button {
                 background: #509CF6;
                 border: 1px solid #509CF6;
+                background: #F57373;
+                border: 1px solid #F57373;
             }
     .cm-plugins h2,
     .cm-plugins h3 {
