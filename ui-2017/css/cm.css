@@ -35,6 +35,19 @@ p a:hover {
     box-shadow:         none;
 }
 
+.email-hero {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    text-align: center;
+
+    background: -moz-linear-gradient(top, #FFFFFF 0%, #FFFFFF 80%, #F2F4F6 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #FFFFFF 0%, #FFFFFF 80%, #F2F4F6 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #FFFFFF 0%, #FFFFFF 80%, #F2F4F6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+    .email-hero .handwriting {
+        color: #F57373;
+    }
+
 .cm-header {
     background: #F2F4F6;
     padding-top: 20px;
@@ -56,10 +69,6 @@ p a:hover {
     padding-bottom: 32px;
     text-align: center;
 }
-    .cm-hero .handwriting {
-        color: white;
-        color: #002B45;
-    }
 
 .button {
     display: inline-block;
@@ -85,7 +94,8 @@ p a:hover {
         color: white;
     }
     .plugins {
-        display: table;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
         margin-top: 30px;
         width: 100%;
     }
@@ -98,18 +108,12 @@ p a:hover {
         }
         .plugins > a {
             color: white;
-            display: table-cell;
-            /*padding-top: 20px;*/
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
             padding-right: 20px;
-            /*padding-bottom: 30px;*/
             padding-left: 20px;
-            width: 33%;
         }
-            .plugins > a:nth-of-type(2) {
-                /*border-right: 1px solid rgba(255, 255, 255, .75);
-                border-left: 1px solid rgba(255, 255, 255, .75);*/
-                width: 34%;
-            }
             .plugins > a > img {
                 display: block;
                 height: auto;
