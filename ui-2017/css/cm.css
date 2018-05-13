@@ -234,7 +234,8 @@ p a:hover {
             padding-top: 20px;
             padding-bottom: 20px;
         }
-    .section-header h2 {
+    .section-header h2,
+    .help-with p {
         color: #0330ab;
         font-weight: normal;
         opacity: .75;
@@ -257,17 +258,6 @@ p a:hover {
     text-align: center;
 }
 
-.button {
-    display: inline-block;
-    font-size: .75em;
-    font-weight: bold;
-    margin-top: 3em;
-    padding: 8px 10px;
-    text-transform: uppercase;
-    -webkit-transition: all .25s;
-    transition: all .25s;
-}
-
 .cm-plugins {
     background: #002B45;
     color: white;
@@ -276,6 +266,15 @@ p a:hover {
     text-align: center;
 }
     .cm-plugins .button {
+        display: inline-block;
+        font-size: .75em;
+        font-weight: bold;
+        margin-top: 3em;
+        padding: 8px 10px;
+        text-transform: uppercase;
+        -webkit-transition: all .25s;
+        transition: all .25s;
+
         border: 1px solid white;
         border-radius: 5px;
         color: white;
@@ -385,12 +384,29 @@ p a:hover {
         padding-bottom: 0;
     }
 
+.help-with {
+    padding-top: 60px;
+    padding-bottom: 66px;
+}
+.help-with div.button a {
+    background: #2aa3f9;
+    background: #f60040;
+    color: white;
+    opacity: .875;
+    -webkit-box-shadow: 3px 3px 0px 0px #2aa3f9;
+    -moz-box-shadow:    3px 3px 0px 0px #2aa3f9;
+    box-shadow:         3px 3px 0px 0px #2aa3f9;
+}
+.help-with div.button a:hover {
+    opacity: 1;
+}
+
 footer {
     color: #717A8A;
 }
 
 .outer > footer {
-    background: #F2F4F6;
+    /*background: #F2F4F6;*/
 }
 
 .outer > footer p a {
