@@ -304,10 +304,10 @@ p a:hover {
             display: flex;
             justify-content: space-between;
             flex-direction: column;
-            padding-right: 20px;
-            padding-left: 20px;
+            padding-right: 22px;
+            padding-left: 22px;
         }
-            .plugins > a > img {
+            .plugins > a > div > img {
                 display: block;
                 height: auto;
                 margin-right: auto;
