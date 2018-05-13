@@ -3,6 +3,8 @@ title: Email &amp; Campaign Monitor Support
 ---
 {% include head.html %}
     <link rel="stylesheet" href="/ui-2017/css/cm.css">
+    <!-- <link rel="stylesheet" href="/ui-2017/js/jquery.bxslider.css"> -->
+    <link rel="stylesheet" href="/ui-2017/js/slippry.css">
 </head>
 <body><div class="outer">
     {% include header.html %}
@@ -12,9 +14,9 @@ title: Email &amp; Campaign Monitor Support
                 <p class="handwriting">Clearbold is your one-stop shop for email design, development and delivery&nbsp;services.</p>
             </div>
         </section>
-        <section class="cm-header">
+        <section class="section-header cm-header">
             <img class="cm-logo-header" src="/logo-cm.svg" alt="Campaign Monitor logo" />
-            <h1 class="visuallyhidden">Campaign Monitor Support</h1>
+            <h2 class="visuallyhidden">Campaign Monitor Support</h2>
         </section>
         <section class="hero cm-hero">
             <div class="wrapper wrapper-content">
@@ -47,6 +49,44 @@ title: Email &amp; Campaign Monitor Support
                 </div>
             </div>
         </section>
+        <section class="email-client email-farmcollective">
+            <div>
+                <div>
+                    <img src="./fc.png" />
+                </div>
+            </div>
+            <div>
+                <div>
+                    <div class="cm-lockup"><img src="/logo-cm-marque.svg" />
+                    <h3>API Integration</h3></div>
+                    <p><b>Farm Collective Wine</b> culpa ducimus odit numquam nesciunt culpa dolor accusamus. Fugiat qui ut ut dolore laborum eum consequatur eum. Quas quidem et quia minima.</p>
+
+                    <p>Laudantium ipsam quia consequatur provident et eveniet itaque. Dolores occaecati eum quia. Repudiandae ipsam tenetur fugiat beatae et vel. Laborum tempore molestiae quod ad cumque excepturi perspiciatis itaque.</p></div>
+            </div>
+        </section>
+        <section class="section-header">
+            <h2 class="handwriting">HTML Email Design</h2>
+        </section>
+        <section class="email-client email-savingstar">
+            <div class="client-image">
+                <div>
+                    <div id="slider">
+                        <div><img src="./savingstar/5.png" /></div>
+                        <div><img src="./savingstar/2.png" /></div>
+                        <div><img src="./savingstar/3.png" /></div>
+                        <div><img src="./savingstar/4.png" /></div>
+                        <div><img src="./savingstar/1.png" /></div>
+                    </div>
+                </div>
+            </div>
+            <div class="client-text">
+                <div>
+                    <h3><span>SavingStar</span><br />Onboarding and Customer&nbsp;Emails</h3>
+                    <p><b>SavingStar</b> culpa ducimus odit numquam nesciunt culpa dolor accusamus. Fugiat qui ut ut dolore laborum eum consequatur eum. Quas quidem et quia minima.</p>
+                    <p>Working with <a href="http://taylorwaldman.com">Aaron Taylor-Waldman</a>, Laudantium ipsam quia consequatur provident et eveniet itaque. Dolores occaecati eum quia. Repudiandae ipsam tenetur fugiat beatae et vel. Laborum tempore molestiae quod ad cumque excepturi perspiciatis itaque.</p>
+                </div>
+            </div>
+        </section>
     </div>
     <footer>
         <div class="wrapper wrapper-content">
@@ -55,5 +95,53 @@ title: Email &amp; Campaign Monitor Support
     </footer>
 </div>
 <!-- <script src="https://widget.battleforthenet.com/widget.js" async></script> -->
+<style type="text/css">
+/* BUG FIX FOR CLONE SLIDE FIRST */
+
+/*.bx-wrapper img {
+    max-width: 100%;
+    display: inline-block;
+}
+
+.bx-viewport li {
+    min-height: 1px;
+    min-width: 1px;
+}*/
+
+/*.bx-clone {
+    display: none;
+}*/
+/*.bx-clone{
+    display: none !important;
+}*/
+</style>
+<script
+src="https://code.jquery.com/jquery-3.3.1.min.js"
+integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+crossorigin="anonymous"></script>
+<!-- <script type="text/javascript" src="/ui-2017/js/jquery.bxslider.min.js"></script> -->
+<script type="text/javascript" src="/ui-2017/js/slippry.min.js"></script>
+<script type="text/javascript">
+    // $(window).ready(function() {
+        // $('.slideshow').bxSlider({
+        //     animateLoop: false,
+        //     auto: true,
+        //     controls: false,
+        //     pager: false,
+        //     randomStart: false,
+        //     startSlide: 1
+        // });
+    // })
+    jQuery(document).ready(function(){
+        jQuery('#slider').slippry({
+            auto: true,
+            captions: false,
+            controls: false,
+            elements: 'div',
+            pager: false,
+            speed: 500
+        })
+    });
+</script>
 </body>
 </html>

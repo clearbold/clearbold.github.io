@@ -40,19 +40,197 @@ p a:hover {
     padding-bottom: 60px;
     text-align: center;
 
-    background: -moz-linear-gradient(top, #FFFFFF 0%, #FFFFFF 80%, #F2F4F6 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, #FFFFFF 0%, #FFFFFF 80%, #F2F4F6 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, #FFFFFF 0%, #FFFFFF 80%, #F2F4F6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background: -moz-linear-gradient(top, #FFFFFF 0%, #FFFFFF 75%, #F2F4F6 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #FFFFFF 0%, #FFFFFF 75%, #F2F4F6 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #FFFFFF 0%, #FFFFFF 75%, #F2F4F6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
-    .email-hero .handwriting {
+    .handwriting {
         color: #F57373;
     }
 
-.cm-header {
-    background: #F2F4F6;
-    padding-top: 20px;
-    padding-bottom: 20px;
+.email-client > div {
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
+@media all and (min-width: 860px) {
+    .cssgrid .email-farmcollective {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+    .cssgrid .email-savingstar {
+        display: grid;
+        grid-template-areas: "text image";
+        grid-template-columns: 1fr 1fr;
+    }
+        .cssgrid .email-savingstar .client-text {
+            grid-column: 1;
+            grid-row: 1;
+        }
+        .cssgrid .email-savingstar .client-image {
+            grid-column: 2;
+            grid-row: 1;
+        }
+}
+@media all and (min-width: 1440px) {
+    .cssgrid .email-client {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+        .email-farmcollective > div:nth-of-type(1) {
+            background: white;
+        }
+        .email-savingstar > div:nth-of-type(1) {
+            padding-bottom: 0;
+        }
+@media all and (min-width: 860px) {
+            .email-farmcollective > div:nth-of-type(1) > div,
+            .email-savingstar > div:nth-of-type(1) > div {
+                margin-right: auto;
+                margin-left: auto;
+                padding-right: 40px;
+                padding-left: 40px;
+                width: 100%;
+            }
+            .cssgrid .email-farmcollective > div:nth-of-type(1) > div,
+            .cssgrid .email-savingstar > div:nth-of-type(1) > div {
+                margin-right: 0;
+                max-width: calc(1280px/3);
+            }
+            .cssgrid .email-savingstar > div:nth-of-type(1) {
+                padding-bottom: 40px;
+            }
+            .cssgrid .email-savingstar > div:nth-of-type(1) > div {
+                max-width: calc(1280px/2);
+            }
+}
+        .email-farmcollective > div:nth-of-type(1) img,
+        .email-savingstar > div:nth-of-type(1) img {
+            display: block;
+            height: auto;
+            margin-right: auto;
+            margin-left: auto;
+            max-width: 300px;
+            width: 100%;
+        }
+        .email-savingstar > div:nth-of-type(1) img {
+            box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, .125);
+            max-width: 450px;
+        }
+
+        .email-client > div {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .email-farmcollective > div:nth-of-type(2),
+        .email-savingstar > div:nth-of-type(2) {
+            color: white;
+            font-size: 18px;
+        }
+        .email-farmcollective > div:nth-of-type(2) {
+            background: #509CF6;
+        }
+            .email-farmcollective > div:nth-of-type(2) > div,
+            .email-savingstar > div:nth-of-type(2) > div {
+                padding-right: 20px;
+                padding-left: 20px;
+            }
+@media all and (min-width: 860px) {
+            .email-farmcollective > div:nth-of-type(2) > div,
+            .email-savingstar > div:nth-of-type(2) > div {
+                margin-right: auto;
+                margin-left: auto;
+                max-width: 960px;
+                width: 100%;
+            }
+            .cssgrid .email-farmcollective > div:nth-of-type(2) > div,
+            .cssgrid .email-savingstar > div:nth-of-type(2) > div {
+                margin-left: 0;
+                max-width: calc(1280px/3*2);
+                padding-right: 40px;
+                padding-left: 40px;
+            }
+            .cssgrid .email-savingstar > div:nth-of-type(2) > div {
+                max-width: calc(1280px/2);
+            }
+}
+@media all and (min-width: 1440px) {
+            .cssgrid .email-farmcollective > div:nth-of-type(2) > div,
+            .cssgrid .email-savingstar > div:nth-of-type(2) > div {
+                max-width: calc(960px/2);
+            }
+}
+                .email-client p {
+                    line-height: 1.5em;
+                }
+                .email-client p:not(:last-child) {
+                    margin-bottom: 1em;
+                }
+
+.email-savingstar {
+    background: #414eb1;
+    background: -moz-linear-gradient(-45deg, #2aa3f9 0%, #f60040 100%);
+    background: -webkit-linear-gradient(-45deg, #2aa3f9 0%,#f60040 100%);
+    background: linear-gradient(135deg, #2aa3f9 0%,#f60040 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2aa3f9', endColorstr='#f60040',GradientType=1 );
+}
+.email-savingstar a,
+.email-savingstar a:visited {
+    color: white;
+    text-decoration: underline;
+}
+
+.cm-lockup {
+    margin-bottom: 1em;
+}
+.cm-lockup > img {
+                display: block;
+                height: auto;
+                margin-right: auto;
+                margin-left: auto;
+                max-width: 40px;
+                width: 100%;
+            }
+.cm-lockup h3,
+.client-text h3 {
+    font-size: .875em;
+    font-weight: bold;
+    line-height: 1.5em;
+    padding-top: .5em;
+    text-align: center;
+    text-transform: uppercase;
+}
+.client-text h3 {
+    margin-bottom: 1em;
+    padding-top: 0;
+}
+.client-text h3 span {
+    text-transform: none;
+}
+
+.section-header {
+    background: #F2F4F6;
+}
+    .section-header {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+@media all and (min-width: 860px) {
+    .section-header {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+        .cm-header {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+    .section-header h2 {
+        color: #0330ab;
+        font-weight: normal;
+        opacity: .75;
+        text-align: center;
+    }
     .cm-logo-header {
         display: block;
         height: auto;
@@ -99,12 +277,19 @@ p a:hover {
         margin-top: 30px;
         width: 100%;
     }
+    .no-cssgrid .plugins > a {
+        margin-bottom: 30px;
+    }
+    .no-cssgrid .plugins > a:last-child {
+        margin-bottom: 0;
+    }
         .craft-logo-header {
             display: block;
             height: auto;
             margin-right: auto;
             margin-left: auto;
             max-width: 150px;
+            width: 100%;
         }
         .plugins > a {
             color: white;
@@ -121,6 +306,9 @@ p a:hover {
                 margin-left: auto;
                 max-width: 40px;
                 width: 100%;
+            }
+            .no-cssgrid .cm-plugins .plugins > a .button {
+                max-width: 150px;
             }
             .cm-plugins .plugins > a:hover .button {
                 background: #509CF6;
@@ -170,6 +358,22 @@ p a:hover {
                 margin-bottom: 0;
                 padding-bottom: 0;
             }
+    }
+    .no-cssgrid .plugins a,
+    .no-cssgrid .plugins a:nth-of-type(2) {
+        border-bottom: 1px solid white;
+        display: block;
+        margin-right: auto;
+        margin-bottom: 40px;
+        margin-left: auto;
+        max-width: 500px;
+        padding-bottom: 40px;
+        width: 100%;
+    }
+    .no-cssgrid .plugins a:last-child {
+        border-bottom: 0;
+        margin-bottom: 0;
+        padding-bottom: 0;
     }
 
 footer {

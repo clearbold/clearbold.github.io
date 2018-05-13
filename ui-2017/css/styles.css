@@ -147,9 +147,8 @@ footer {
         text-shadow: 1px 2px 0px #7fdbff;
         text-transform: uppercase;
     }
-    .hero .handwriting {
+    .handwriting {
         color: #F47804;
-        /*font-family: 'Permanent Marker', cursive;*/
         font-family: permanent_markerregular, cursive;
         font-size: 22px;
         letter-spacing: .05em;
@@ -331,6 +330,9 @@ footer {
     padding-top: 40px;
     padding-bottom: 40px;
 }
+        .bio > div > div > p {
+            position: relative;
+        }
         .bio > div > figure {
             grid-area: figure;
         }
@@ -424,7 +426,7 @@ footer {
             text-shadow: 2px 3px 0px #7fdbff;
             /*,4px 5px 0px rgba(127, 219, 255, .9);*/
         }
-        .hero .handwriting {
+        .handwriting {
             font-size: 28px;
         }
     .help-with {
