@@ -178,10 +178,19 @@ p a:hover {
 
 .email-savingstar {
     background: #414eb1;
-    background: -moz-linear-gradient(-45deg, #2aa3f9 0%, #f60040 100%);
-    background: -webkit-linear-gradient(-45deg, #2aa3f9 0%,#f60040 100%);
-    background: linear-gradient(135deg, #2aa3f9 0%,#f60040 100%);
+    background: -moz-linear-gradient(-45deg, #2aa3f9 0%, #2aa3f9 25%, #f60040 100%);
+    background: -webkit-linear-gradient(-45deg, #2aa3f9 0%, #2aa3f9 25%, #f60040 100%);
+    background: linear-gradient(135deg, #2aa3f9 0%, #2aa3f9 25%, #f60040 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2aa3f9', endColorstr='#f60040',GradientType=1 );
+}
+@media all and (min-width: 500px) {
+    .email-savingstar {
+        background: #414eb1;
+        background: -moz-linear-gradient(-45deg, #2aa3f9 0%, #f60040 100%);
+        background: -webkit-linear-gradient(-45deg, #2aa3f9 0%,#f60040 100%);
+        background: linear-gradient(135deg, #2aa3f9 0%,#f60040 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2aa3f9', endColorstr='#f60040',GradientType=1 );
+    }
 }
 .email-savingstar a,
 .email-savingstar a:visited {
