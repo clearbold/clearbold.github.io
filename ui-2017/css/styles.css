@@ -504,9 +504,9 @@ footer {
         width: auto;
     }
         .outer > header > div > p a {
-            -webkit-box-shadow: inset 0 -2px 0 rgba(255, 255, 255, .8);
-            -moz-box-shadow:    inset 0 -2px 0 rgba(255, 255, 255, .8);
-            box-shadow:         inset 0 -2px 0 rgba(255, 255, 255, .8);
+            -webkit-box-shadow: inset 0 -2px 0 rgba(255, 255, 255, .6125);
+            -moz-box-shadow:    inset 0 -2px 0 rgba(255, 255, 255, .6125);
+            box-shadow:         inset 0 -2px 0 rgba(255, 255, 255, .6125);
         }
         .outer > header > div > p a:hover,
         .outer > header > div > p a:visited {
