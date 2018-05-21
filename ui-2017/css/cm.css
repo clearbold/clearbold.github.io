@@ -270,6 +270,16 @@ p a:hover {
     padding-bottom: 32px;
     text-align: center;
 }
+    .cm-hero p:last-child {
+        font-style: italic;
+        font-size: .875em;
+    }
+    .cm-hero p:not(:last-child) {
+        margin-bottom: 1em;
+    }
+    .cm-hero p a {
+        text-decoration: underline;
+    }
 
 .cm-plugins {
     background: #002B45;
