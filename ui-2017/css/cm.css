@@ -280,6 +280,7 @@ p a:hover {
     .cm-hero p:last-child {
         font-style: italic;
         font-size: .875em;
+        line-height: 1.5em;
     }
     .cm-hero p:not(:last-child) {
         margin-bottom: 1em;

@@ -458,7 +458,7 @@ footer {
 @media all and (max-width: 320px) {
     .outer > header > div > p {
         font-weight: normal;
-        margin-top: -8px;
+        margin-top: -10px;
         padding-top: 0;
         width: 67.5%;
     }
