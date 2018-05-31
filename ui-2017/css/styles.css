@@ -63,6 +63,20 @@ h1, h2, h3, h4 {
     padding-right: 20px;
     padding-left: 20px;
 }
+@media all and (max-width: 320px) {
+    .wrapper {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    /*.wrapper-content {
+        padding-right: 10px;
+        padding-left: 10px;
+    }*/
+        .brand img {
+            height: auto;
+            width: 60px;
+        }
+}
 
 body {
     -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
@@ -85,12 +99,11 @@ body {
 .outer > header {
     padding-top: 18px;
     padding-bottom: 16px;
-    /*padding-left: 8px;*/
     padding-right: 20px;
     padding-left: 28px;
 }
     .outer > header > div > p {
-        display: none;
+        /*display: none;*/
         line-height: 1.3125em;
     }
 
@@ -154,6 +167,11 @@ footer {
         letter-spacing: .05em;
         line-height: 1.25em;
     }
+@media all and (max-width: 320px) {
+    .handwriting {
+        font-size: 20px;
+    }
+}
 .help-with {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -318,6 +336,15 @@ footer {
         grid-area: text;
         margin-right: -10px;
     }
+@media all and (max-width: 320px) {
+    .email-tip > div {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    .email-tip > div > div {
+        margin-right: auto;
+    }
+}
     .newsletter-tip a,
     .email-tip a {
         color: inherit;
@@ -341,6 +368,13 @@ footer {
     margin-top: -20px;
     padding-top: 40px;
     padding-bottom: 40px;
+}
+@media all and (max-width: 320px) {
+    .bio {
+        margin-top: 0px;
+        padding-top: 40px;
+        padding-bottom: 60px;
+    }
 }
         .bio > div > div > p {
             position: relative;
@@ -410,6 +444,14 @@ footer {
         margin-right: 10px;
         width: 62.5%;
     }
+@media all and (max-width: 320px) {
+    .outer > header > div > p {
+        font-weight: normal;
+        margin-top: -10px;
+        padding-top: 0;
+        width: 67.5%;
+    }
+}
         .outer > header > div > p a {
             color: rgba(255, 255, 255, .8);
 
