@@ -205,6 +205,17 @@ footer {
             -moz-box-shadow:    5px 5px 0px 0px rgba(75,55,28,.5);
             box-shadow:         5px 5px 0px 0px rgba(75,55,28,.5);
         }
+@media all and (max-width: 320px) {
+    .tiles {
+        grid-gap: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+        .tiles > div {
+            -webkit-box-shadow: 0 5px 0px 0px rgba(75,55,28,.5);
+            -moz-box-shadow:    0 5px 0px 0px rgba(75,55,28,.5);
+            box-shadow:         0 5px 0px 0px rgba(75,55,28,.5);
+        }
+}
         .no-cssgrid .tiles > div {
             margin-bottom: 20px;
         }
@@ -447,7 +458,7 @@ footer {
 @media all and (max-width: 320px) {
     .outer > header > div > p {
         font-weight: normal;
-        margin-top: -10px;
+        margin-top: -8px;
         padding-top: 0;
         width: 67.5%;
     }
