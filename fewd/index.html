@@ -8,7 +8,7 @@ title: Front-end Web Development Specifications
     }
     p, ul {
         line-height: 1.5em;
-        margin: 1em;
+        margin: 1.5em;
     }
     ul {
         padding-left: 2em;
@@ -18,7 +18,7 @@ title: Front-end Web Development Specifications
     }
     .code {
         font-family: monospace;
-        font-size: 1.2em;
+        font-size: 1.4em;
     }
 </style>
 </head>
@@ -31,8 +31,6 @@ title: Front-end Web Development Specifications
 
 <p>All typography treatments should be documented in a styleguide, including <span class="code">font-family</span>, <span class="code">font-weight</span>, <span class="code">color</span>, and <span class="code">font-size</span>. Any single-use deviations from those styles must be annotated in comps.</p>
 
-<p><span class="code">em</span>s are multiples of a font&rsquo;s size. <span class="code">line-height</span>, <span class="code">margin</span>s, <span class="code">padding</span>, and <span class="code">height</span> can all be coded in <span class="code">em</span>s so that if the user changes their default browser font-size, the content styles will scale. While not required, it can be very helpful to think in these terms, and <span class="code">line-height</span> and <span class="code">margin</span> are typically coded using <span class="code">em</span>s.</p>
-
 <p>Styleguide must include specs for:</p>
 
 <ul><li>Paragraph / Heading 4</li>
@@ -42,6 +40,8 @@ title: Front-end Web Development Specifications
 <li>Heading 1</li>
 <li>Heading 2</li>
 <li>Heading 3</li></ul>
+
+<p><span class="code">em</span>s are multiples of a font&rsquo;s size. <span class="code">line-height</span>, <span class="code">margin</span>s, <span class="code">padding</span>, and <span class="code">height</span> can all be coded in <span class="code">em</span>s so that if the user changes their default browser font-size, the content styles will scale. While not required, it can be very helpful to think in these terms, and <span class="code">line-height</span> and <span class="code">margin</span> are typically coded using <span class="code">em</span>s. (The <span class="code">line-height</span> of this text, for example, is <span class="code">1.5em</span>. The paragraph <span class="code">margin</span>s are also <span class="code">1.5em</span>, so that they equal 1 blank line.)</p>
 
 <p>Icons should be produced and provided as SVGs. Bitmapped UI and brand elements should be provided as (minimum) @2x sliced PNG-24s with transparent backgrounds.</p>
 
