@@ -27,9 +27,11 @@ title: Front-end Web Development Specifications
 
 <p>All comps must include 3 responsive states, covering all designed elements and states: Mobile, Tablet, Laptop/Desktop.</p>
 
-<p>If regions contain full-bleed content that has a <span class="code">max-width</span>, such as large hero photos, the comp's width should exceed that width, to show what happens beyond the design element's <span class="code">max-width</span> dimensions.
+<p>If regions contain full-bleed content that has a <span class="code">max-width</span>, such as large hero photos, the comp&rsquo;s width should exceed that width, to show what happens beyond the design element&rsquo;s <span class="code">max-width</span> dimensions.
 
 <p>All typography treatments should be documented in a styleguide, including <span class="code">font-family</span>, <span class="code">font-weight</span>, <span class="code">color</span>, and <span class="code">font-size</span>. Any single-use deviations from those styles must be annotated in comps.</p>
+
+<p><span class="code">em</span>s are multiples of a font&rsquo;s size. <span class="code">line-height</span>, <span class="code">margin</span>s, <span class="code">padding</span>, and <span class="code">height</span> can all be coded in <span class="code">em</span>s so that if the user changes their default browser font-size, the content styles will scale. While not required, it can be very helpful to think in these terms, and <span class="code">line-height</span> and <span class="code">margin</span> are typically coded using <span class="code">em</span>s.</p>
 
 <p>Styleguide must include specs for:</p>
 
