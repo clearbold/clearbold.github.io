@@ -1,0 +1,70 @@
+---
+title: Front-end Web Development Specifications
+---
+{% include head.html %}
+<style type="text/css">
+    body {
+        background: white;
+    }
+    p, ul {
+        line-height: 1.5em;
+        margin: 1em;
+    }
+    ul {
+        padding-left: 2em;
+    }
+    li {
+        margin-bottom: .5em;
+    }
+    .code {
+        font-family: monospace;
+        font-size: 1.2em;
+    }
+</style>
+</head>
+<body>
+<p><i>Hello!</i> The following parameters and specifications apply to comp-driven website (re)design projects, to ensure a smooth transition to front-end development and building CMS templates. My goal is to outline parameters to consider how designs will behave when they’re translated into code, or interacted with. These parameters and specifications will also help put A11y (accessibility) first, rather than trying to make a design accessible.</p>
+
+<p>All comps must include 3 responsive states, covering all designed elements and states: Mobile, Tablet, Laptop/Desktop.</p>
+
+<p>All typography treatments should be documented in a styleguide, including <span class="code">font-family</span>, <span class="code">font-weight</span>, <span class="code">color</span>, and <span class="code">font-size</span>. Any single-use deviations from those styles must be annotated in comps.</p>
+
+<p>Styleguide must include specs for:</p>
+
+<ul><li>Paragraph / Heading 4</li>
+<li>Unordered list</li>
+<li>Ordered list</li>
+<li>Blockquote</li>
+<li>Heading 1</li>
+<li>Heading 2</li>
+<li>Heading 3</li></ul>
+
+<p>Icons should be produced and provided as SVGs. Bitmapped UI and brand elements should be provided as (minimum) @2x sliced PNG-24s with transparent backgrounds.</p>
+
+<p>Production files should be delivered as flattened PNGs, @2x, for reference and grabbing dimensions and offsets.</p>
+
+<p>All form fields must include <span class="code">:focus</span> and non-<span class="code">:focus</span> states.</p>
+
+<p>Form field designs that deviate from browser defaults must include annotations noting that such designs will require likely JavaScript coding to render consistently, particularly with styled <span class="code">select</span> menus (dropdowns) or <span class="code">labels</span> inside text <span class="code">input</span> fields. Sign-off on this approach must be secured.</p>
+
+<p>(ANY styling of <span class="code">select</span> fields (dropdowns) rendered consistently across browsers will require a dependency on Harvest’s Chosen JavaScript plugin and be achieved within its constraints.)</p>
+
+<p>(Labels really shouldn’t appear inside text <span class="code">input</span> fields. HTML5 included the <span class="code">placeholder</span> attribute for a reason, to provide an example of appropriate input and formatting. The <span class="code">label</span> should be outside the <span class="code">input</span> element, to allow proper use of the <span class="code">placeholder</span> attribute. In-field <span class="code">labels</span> also disappear on users once they’ve entered a value, which leads to ambiguity or obfuscation as they fill in field values.)</p>
+
+<p>All comps must include a version where any optional content is removed, to show how elements otherwise flow together.</p>
+
+<p>Vertical <span class="code">margins</span> between layout elements should be identified and must precede 1 element, not be a combination of adjacent element spacing.</p>
+
+<p>All dimensions, gutters, and offsets should be in even-numbered increments. Responsive CSS is math. Even numbers divide evenly.</p>
+
+<p>No single-line text elements should be included in horizontal lock-ups, as text *will* wrap and break those layouts.</p>
+
+<p>Text shapes on the same designed element should not vary in width on a page-by-page basis to control where text wraps. If this is a goal, it must be annotated in comps and sign-off secured.</p>
+
+<p>Any scroll effects, hover effects, or other behaviors must be annotated at each breakpoint.</p>
+
+<p>Content revealed in hover states is a bad idea – The Microsoft Surface notebooks include a detachable screen that can be used in tablet mode, but would match laptop/desktop breakpoints per viewport width; Surface also supports touch events when in laptop mode. Any goals of hiding and revealing content will require extra work for touchscreen detection, and must be annotated in comps and signed off on.</p>
+
+<p>Requests for clarification on consistency or intent incur time to discuss the issue at the expense of maximizing productive development time.</p>
+</body>
+</html>
