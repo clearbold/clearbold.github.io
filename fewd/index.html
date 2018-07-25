@@ -25,7 +25,7 @@ title: Front-end Web Development Specifications
 </style>
 </head>
 <body>
-<p><i>Hello!</i> The following parameters and specifications apply to comp-driven website (re)design projects, to ensure a smooth transition to front-end development and building CMS templates. My goal is to outline parameters to consider how designs will behave when they’re translated into code, or interacted with. These parameters and specifications will also help put a11y (accessibility) first, rather than retrofitting a11y to a design. (Learn more about <a href="https://uxdesign.cc/designing-for-accessibility-is-not-that-hard-c04cc4779d94">designing for a11y</a>.)</p>
+<p><i>Hello!</i> The following parameters and specifications apply to comp-driven website (re)design projects, to ensure a smooth transition to front-end development and building CMS templates. My goal is to outline parameters to consider how designs will behave when they&rsquo;re translated into code, or interacted with. These parameters and specifications will also help put a11y (accessibility) first, rather than retrofitting a11y to a design. (Learn more about <a href="https://uxdesign.cc/designing-for-accessibility-is-not-that-hard-c04cc4779d94">designing for a11y</a>.)</p>
 
 <p>All comps must include 3 responsive states, covering all designed elements and states: Mobile, Tablet, Laptop/Desktop.</p>
 
@@ -53,9 +53,9 @@ title: Front-end Web Development Specifications
 
 <p>Form field designs that deviate from browser defaults must include annotations noting that such designs will require likely JavaScript coding to render consistently, particularly with styled <span class="code">select</span> menus (dropdowns) or <span class="code">labels</span> inside text <span class="code">input</span> fields. Sign-off on this approach must be secured.</p>
 
-<p>(ANY styling of <span class="code">select</span> fields (dropdowns) rendered consistently across browsers will require a dependency on Harvest’s Chosen JavaScript plugin and be achieved within its constraints.)</p>
+<p>(ANY styling of <span class="code">select</span> fields (dropdowns) rendered consistently across browsers will require a dependency on Harvest&rsquo;s Chosen JavaScript plugin and be achieved within its constraints.)</p>
 
-<p>(Labels really shouldn’t appear inside text <span class="code">input</span> fields. HTML5 included the <span class="code">placeholder</span> attribute for a reason, to provide an example of appropriate input and formatting. The <span class="code">label</span> should be outside the <span class="code">input</span> element, to allow proper use of the <span class="code">placeholder</span> attribute. In-field <span class="code">labels</span> also disappear on users once they’ve entered a value, which leads to ambiguity or obfuscation as they fill in field values.)</p>
+<p>(Labels really shouldn&rsquo;t appear inside text <span class="code">input</span> fields. HTML5 included the <span class="code">placeholder</span> attribute for a reason, to provide an example of appropriate input and formatting. The <span class="code">label</span> should be outside the <span class="code">input</span> element, to allow proper use of the <span class="code">placeholder</span> attribute. In-field <span class="code">labels</span> also disappear on users once they&rsquo;ve entered a value, which leads to ambiguity or obfuscation as they fill in field values.)</p>
 
 <p>All comps must include a version where any optional content is removed, to show how elements otherwise flow together.</p>
 
@@ -70,6 +70,8 @@ title: Front-end Web Development Specifications
 <p>Any scroll effects, hover effects, or other behaviors must be annotated at each breakpoint.</p>
 
 <p>Content revealed in hover states is a bad idea – The Microsoft Surface notebooks include a detachable screen that can be used in tablet mode, but would match laptop/desktop breakpoints per viewport width; Surface also supports touch events when in laptop mode. Any goals of hiding and revealing content will require extra work for touchscreen detection, and must be annotated in comps and signed off on.</p>
+
+<p>We&rsquo;re embracing the CMS or we&rsquo;re coding static pages. We cannot code in content-specific breakpoints or CSS rules on a page-specific or section-specific basis for the sake of navigation or other elements. CMS-based pages have titles which are output in navigation and links. Those need to be designed flexibly.</p>
 
 <p>Requests for clarification on consistency or intent incur time to discuss the issue at the expense of maximizing productive development time.</p>
 </body>
