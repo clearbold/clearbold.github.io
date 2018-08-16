@@ -25,6 +25,31 @@ title: Front-end Web Development Specifications
         font-family: monospace;
         font-size: 1.4em;
     }
+    p a,
+    li a {
+        -webkit-transition: all .25s;
+        transition: all .25s;
+
+        -webkit-box-shadow: inset 0 -2px 0 rgba(0, 178, 255, .5);
+        -moz-box-shadow:    inset 0 -2px 0 rgba(0, 178, 255, .5);
+        box-shadow:         inset 0 -2px 0 rgba(0, 178, 255, .5);
+    }
+    p a:visited,
+    li a:visited {
+        color: inherit;
+
+        -webkit-box-shadow: inset 0 -2px 0 rgba(0, 178, 255, .5);
+        -moz-box-shadow:    inset 0 -2px 0 rgba(0, 178, 255, .5);
+        box-shadow:         inset 0 -2px 0 rgba(0, 178, 255, .5);
+    }
+    p a:hover,
+    li a:hover {
+        color: #F47804;
+
+        -webkit-box-shadow: inset 0 -2px 0 rgba(154, 123, 79, .3625);
+        -moz-box-shadow:    inset 0 -2px 0 rgba(154, 123, 79, .3625);
+        box-shadow:         inset 0 -2px 0 rgba(154, 123, 79, .3625);
+    }
 </style>
 </head>
 <body>
