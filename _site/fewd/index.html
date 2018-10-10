@@ -86,6 +86,7 @@
 </head>
 <body>
 <p><i>Hello!</i> The following parameters and specifications apply to comp-driven website (re)design projects, to ensure a smooth transition to front-end development and building CMS templates. My goal is to outline parameters to consider how designs will behave when they&rsquo;re translated into code, or interacted with. These parameters and specifications will also help put a11y (accessibility) first, rather than retrofitting a11y to a design. (Learn more about <a href="https://uxdesign.cc/designing-for-accessibility-is-not-that-hard-c04cc4779d94">designing for a11y</a>.)</p>
+<p>Addressing these concerns in the design phase will not just help keep project scope and budget on track; thinking through these considerations will result in a more effective, bulletproof design.</p>
 <ol>
 <li>All comps must include 3 responsive states, covering all designed elements and states: Mobile, Tablet, Laptop/Desktop.</li>
 
@@ -111,7 +112,7 @@
 
 <li>All form fields must include <span class="code">:focus</span> and non-<span class="code">:focus</span> states.</li>
 
-<li>Form field designs that deviate from browser defaults must include annotations noting that such designs will require likely JavaScript coding to render consistently, particularly with styled <span class="code">select</span> menus (dropdowns) or <span class="code">labels</span> inside text <span class="code">input</span> fields. Sign-off on this approach must be secured.</li>
+<li>Form field designs that deviate from browser defaults must include annotations noting that such designs will likely require JavaScript coding to render consistently, particularly with styled <span class="code">select</span> menus (dropdowns) or <span class="code">labels</span> inside text <span class="code">input</span> fields. Sign-off on this approach must be secured.</li>
 
 <li>(ANY styling of <span class="code">select</span> fields (dropdowns) rendered consistently across browsers will require a dependency on <a href="https://harvesthq.github.io/chosen/">Harvest&rsquo;s Chosen</a> JavaScript plugin and be achieved within its constraints.)</li>
 
@@ -124,6 +125,8 @@
 <li>All dimensions, gutters, and offsets should be in even-numbered increments. Responsive CSS is math. Even numbers divide evenly. (Consistent use of 10/20/30/40/60/80px for gutters or whitespace is super-helpful.)</li>
 
 <li>No single-line text elements should be included in horizontal lock-ups, as text *will* wrap and break those layouts.</li>
+
+<li>Form vs. function: Critical functionality should not be tightly locked up with visual design elements such that it can't easily expand to accommodate maintenance messages, error messages, additional fields or links, etc.</li>
 
 <li>Text shapes on the same designed element should not vary in width on a page-by-page basis to control where text wraps. If this is a goal, it must be annotated in comps and sign-off secured.</li>
 
