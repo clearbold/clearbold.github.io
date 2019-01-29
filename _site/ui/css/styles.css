@@ -494,7 +494,7 @@ a {
 }
 @media screen and (min-width: 600px) {
     .wrapper-clients ul {
-        margin-bottom: -1.5em;
+        /*margin-bottom: -1.5em;*/
         -webkit-columns: 2;
            -moz-columns: 2;
                 columns: 2;
