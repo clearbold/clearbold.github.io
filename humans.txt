@@ -1,15 +1,15 @@
 /* TEAM */
-    Design and Development: Mark Reeves
-    Contact: hello [at] clearbold.com
-    Twitter: @circa1977
-    From: Montpelier, VT, United States
+   Design and Development: Mark Reeves
+   Contact: hello [at] clearbold.com
+   Twitter: @circa1977
+   From: Montpelier, VT, United States
 
-    Branding: Jodi Vautrin
-    Twitter: @hellomulti
-    From: Somerville, Massachusetts, United States
+   Branding: Jodi Vautrin
+   Twitter: @hellomulti
+   From: Somerville, Massachusetts, United States
 
 /* SITE */
-    Last update: December, 2017
-    Language: U.S. English
-    Doctype: HTML5
-    IDE: Visual Studio Code, Sublime Text 3 on OS X
+   Last update: January, 2019
+   Language: U.S. English
+   Doctype: HTML5
+   IDE: Sublime Text 3 on OS X
