@@ -379,19 +379,18 @@ a {
 }
 @media screen and (min-width: 1280px) {
     .parallax {
-        background-position: center 300px;
         background-size: 100% auto;
         height: 500px;
     }
 }
 @media screen and (min-width: 1440px) {
     .parallax {
-        background-position: center 400px;
+        /*background-position: center 400px;*/
     }
 }
 @media screen and (min-width: 1600px) {
     .parallax {
-        background-position: center 400px;
+        /*background-position: center 400px;*/
     }
 }
 
