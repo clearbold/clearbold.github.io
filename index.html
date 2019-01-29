@@ -82,7 +82,7 @@
         </div>
     </div>
 
-    <div class="panel panel-inset craft" id="craft">
+    <div class="panel panel-inset craft" id="craft" tabindex="-1">
         <div class="wrapper wrapper-content wrapper-craft"><section>
             <img class="craft-logo-header" src="/ui/img/craft.svg" alt="Craft CMS logo" />
             <h1>Plugins</h1>
@@ -127,6 +127,7 @@
         link.addEventListener('click', (e)=>{
             e.preventDefault();
             element.scrollIntoView({behavior: "smooth"});
+            element.focus();
         })
     </script>
 </body>
