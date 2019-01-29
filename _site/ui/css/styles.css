@@ -202,9 +202,9 @@ a {
 }
 @media screen and (min-width: 1280px) {
     .cards {
-        margin-right: -30px;
+        margin-right: -20px;
         margin-bottom: -60px;
-        margin-left: -30px;
+        margin-left: -20px;
     }
         .card {
             flex-basis: calc(33.333333333% - 60px);
@@ -379,8 +379,19 @@ a {
 }
 @media screen and (min-width: 1280px) {
     .parallax {
+        background-position: center 300px;
         background-size: 100% auto;
         height: 500px;
+    }
+}
+@media screen and (min-width: 1440px) {
+    .parallax {
+        background-position: center 400px;
+    }
+}
+@media screen and (min-width: 1600px) {
+    .parallax {
+        background-position: center 400px;
     }
 }
 
