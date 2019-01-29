@@ -490,6 +490,7 @@ a {
 .wrapper-clients ul li {
     line-height: 1.5;
     margin-bottom: 1.5em;
+    padding-right: 10px;
 }
 @media screen and (min-width: 600px) {
     .wrapper-clients ul {
