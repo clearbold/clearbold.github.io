@@ -155,8 +155,10 @@
         let link = document.getElementById('craft-jumplink');
         link.addEventListener('click', (e)=>{
             e.preventDefault();
-            element.scrollIntoView({behavior: "smooth"});
-            element.focus();
+            element.scrollIntoView(
+                {behavior: "smooth", block: "start"}
+            );
+            // element.focus() // <-- needs callback support
         })
     </script>
 </body>
