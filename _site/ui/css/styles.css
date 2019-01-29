@@ -21,6 +21,10 @@ body {
     -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
 }
 
+.skip {
+    display: none;
+}
+
 p {
     line-height: 1.5em;
 }
@@ -87,7 +91,7 @@ a {
     opacity: .95;
     width: 100%;
 }
-.masthead span a:nth-of-type(1) {
+.masthead nav a:nth-of-type(1) {
     margin-right: 8px;
 }
 @media screen and (min-width: 600px) {
@@ -443,10 +447,11 @@ a {
     margin-bottom: 16px; margin-bottom: 1rem;
     width: 80px;
 }
-.wrapper-craft h3 {
+.wrapper-craft .name {
     font-size: 16px; font-size: 1rem;
     font-weight: bold;
     line-height: 1em;
+    margin-top: 4px;
     margin-bottom: 16px; margin-bottom: 1rem;
     text-transform: uppercase;
 }
