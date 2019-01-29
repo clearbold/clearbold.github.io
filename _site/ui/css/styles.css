@@ -201,18 +201,21 @@ a {
         }
 }
 @media screen and (min-width: 1280px) {
-    .cards {
-        margin-right: -20px;
-        margin-bottom: -60px;
-        margin-left: -20px;
+    .services .wrapper-content {
+        overflow-x: hidden;
     }
-        .card {
+    .services .cards {
+        margin-right: -30px;
+        margin-bottom: -60px;
+        margin-left: -30px;
+    }
+        .services .card {
             flex-basis: calc(33.333333333% - 60px);
             max-width: calc(33.333333333% - 60px);
             margin-right: 30px;
             margin-left: 30px;
         }
-        .card:last-child {
+        .services .card:last-child {
             margin-bottom: 60px;
         }
 }
