@@ -488,11 +488,12 @@ a {
     list-style: none;
 }
 .wrapper-clients ul li {
-    line-height: 1.25;
-    margin-bottom: 1.25em;
+    line-height: 1.5;
+    margin-bottom: 1.5em;
 }
 @media screen and (min-width: 600px) {
     .wrapper-clients ul {
+        margin-bottom: -1.5em;
         -webkit-columns: 2;
            -moz-columns: 2;
                 columns: 2;
