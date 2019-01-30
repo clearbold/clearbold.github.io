@@ -148,6 +148,7 @@ a {
 
 .services {
     padding-top: 0;
+    padding-bottom: 96px;
 }
 .services h1 {
     display: none;
@@ -232,7 +233,7 @@ a {
     margin-right: auto;
     margin-left: auto;
     max-width: 900px;
-    padding-top: 8px;
+    /*padding-top: 8px;*/
     width: 100%;
 }
 .mjr figure {
