@@ -127,6 +127,9 @@ a {
     padding-top: 90px;
     padding-bottom: 90px;
 }
+.panel:focus {
+    outline: none;
+}
 
 .intro {
     font-size: 18px; font-size: 1.125rem;
