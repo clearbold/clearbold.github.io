@@ -489,9 +489,11 @@ a {
     list-style: none;
 }
 .wrapper-clients ul li {
+    display: inline-block;
     line-height: 1.5;
     margin-bottom: 1.5em;
     padding-right: 10px;
+    width: 100%;
 }
 @media screen and (min-width: 600px) {
     .wrapper-clients ul {
