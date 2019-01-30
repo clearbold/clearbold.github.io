@@ -152,15 +152,24 @@
         </div>
     </footer></main></div>
     <script type="text/javascript">
-        let element = document.getElementById('craft');
-        let link = document.getElementById('craft-jumplink');
+        const element = document.getElementById('craft');
+        const link = document.getElementById('craft-jumplink');
+
+        const intersectionObserver = new IntersectionObserver((entries) => {
+            let [entry] = entries;
+            if (entry.isIntersecting) {
+                setTimeout(() => element.focus(), 100)
+            }
+        });
+        // start observing
+        intersectionObserver.observe(craft);
+
         link.addEventListener('click', (e)=>{
             e.preventDefault();
             element.scrollIntoView(
-                {behavior: "smooth", block: "start"}
+                {block: 'start', behavior: 'smooth'}
             );
-            // element.focus() // <-- needs callback support
-        })
+        });
     </script>
 </body>
 </html>
