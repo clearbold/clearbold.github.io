@@ -130,6 +130,12 @@ a {
 .panel:focus {
     outline: none;
 }
+.panel-top {
+    border-top: solid 1px rgb(252, 252, 252);
+}
+.panel-bottom {
+    border-bottom: solid 1px rgb(252, 252, 252);
+}
 
 .intro {
     font-size: 18px; font-size: 1.125rem;
@@ -236,7 +242,7 @@ a {
     margin-right: auto;
     margin-left: auto;
     max-width: 900px;
-    /*padding-top: 8px;*/
+    padding-top: 8px;
     width: 100%;
 }
 .mjr figure {
@@ -340,8 +346,8 @@ a {
 .panel-inset {
     background-color: white;
     box-shadow:
-        inset 0px 4px 3px -3px rgba(0, 0, 0, .3125),
-        inset 0px -4px 3px -3px rgba(0, 0, 0, .3125);
+        inset 0px 4px 4px -4px rgba(0, 0, 0, .375),
+        inset 0px -4px 4px -4px rgba(0, 0, 0, .375);
 }
 
 .spacer {
@@ -355,8 +361,8 @@ a {
     background-size: 150% auto;
 
     box-shadow:
-        inset 0px 4px 3px -3px rgba(0, 0, 0, .3125),
-        inset 0px -4px 3px -3px rgba(0, 0, 0, .3125);
+        inset 0px 4px 4px -4px rgba(0, 0, 0, .375),
+        inset 0px -4px 4px -4px rgba(0, 0, 0, .375);
 
     height: 200px;
 }
@@ -490,11 +496,12 @@ a {
     }
 .wrapper-clients ul {
     list-style: none;
+    margin-bottom: -1.5rem;
 }
 .wrapper-clients ul li {
     display: inline-block;
-    line-height: 1.5;
-    margin-bottom: 1.5em;
+    line-height: 1.5rem;
+    margin-bottom: 1.5rem;
     padding-right: 10px;
     width: 100%;
 }
