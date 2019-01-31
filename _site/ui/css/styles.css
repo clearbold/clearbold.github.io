@@ -431,10 +431,12 @@ a {
     text-align: center;
     text-transform: uppercase;
 }
+.wrapper-craft .cards {
+    justify-content: space-around;
+}
 .wrapper-craft a {
     text-decoration: none;
 }
-
 .wrapper-craft .card {
     display: flex;
     justify-content: space-between;
