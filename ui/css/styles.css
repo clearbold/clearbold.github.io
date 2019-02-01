@@ -433,7 +433,7 @@ a {
 }
 .wrapper-craft .cards {
     align-items: stretch;
-    justify-content: space-around;
+    justify-content: center;
 }
 .wrapper-craft a {
     text-decoration: none;
