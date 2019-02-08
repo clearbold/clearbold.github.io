@@ -652,7 +652,7 @@ a {
     height: auto;
     max-width: 280px;
     margin-right: auto;
-    margin-bottom: -1.75em;
+    margin-bottom: 40px;
     margin-left: auto;
     width: 100%;
 }
@@ -661,6 +661,7 @@ a {
 }
 .jn .button {
     display: block;
+    margin-top: 72px;
     margin-right: auto;
     margin-left: auto;
     max-width: 200px;
