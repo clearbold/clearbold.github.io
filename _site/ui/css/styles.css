@@ -63,7 +63,14 @@ a {
     }
 }
 
-.wrapper-content-text p {
+.wrapper-content-text p,
+.wrapper-content-text ul {
+    margin-top: 1em;
+}
+.wrapper-content-text ul {
+    padding-left: 1em;
+}
+.wrapper-content-text li {
     margin-top: 1em;
 }
 
@@ -436,7 +443,7 @@ a {
         background-attachment: fixed;
     }
     .parallax-jn {
-        background-size: 100% auto;
+        background-size: 120% auto;
     }
 }
 
@@ -573,13 +580,15 @@ a {
     margin-bottom: 16px; margin-bottom: 1rem;
     text-transform: uppercase;
 }
-.wrapper-craft .button {
+.button {
     color: inherit;
     display: inline-block;
     font-size: .75em;
     font-weight: bold;
     margin-top: 3em;
     padding: 8px 10px;
+    text-align: center;
+    text-decoration: none;
     text-transform: uppercase;
     -webkit-transition: all .25s;
     transition: all .25s;
@@ -647,6 +656,17 @@ a {
 }
 .about-jn {
     opacity: .75;
+}
+.jn .button {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 200px;
+}
+.jn .button:hover {
+    background: rgb(217, 94, 31);
+    border: 1px solid rgb(217, 94, 31);
+    color: white;
 }
 
 footer {
