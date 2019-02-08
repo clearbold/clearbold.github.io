@@ -52,6 +52,10 @@ a {
     }
 }
 
+.wrapper-content-text p {
+    margin-top: 1em;
+}
+
 .outer {
     background: rgb(217, 94, 31);
     background: -moz-linear-gradient(-30deg, rgb(217, 94, 31) 40px, rgb(120, 151, 22) 40px 250px, rgb(120, 151, 22) 58%, rgb(217, 94, 31) 99%); /* FF3.6-15 */
@@ -238,14 +242,16 @@ a {
         }
 }
 
-.mjr {
+.mjr,
+.eh {
     margin-right: auto;
     margin-left: auto;
     max-width: 900px;
     padding-top: 8px;
     width: 100%;
 }
-.mjr figure {
+.mjr figure,
+.eh figure {
     display: block;
     grid-area: slot-2;
     margin-right: auto;
@@ -253,7 +259,11 @@ a {
     margin-left: auto;
     width: 200px;
 }
-.mjr figure > a {
+.eh > div p {
+    margin-bottom: 1em;
+}
+.mjr figure > a,
+.eh figure > a {
     background: #568203;
     background: -moz-linear-gradient(-30deg, rgb(217, 94, 31) 40px, rgb(120, 151, 22) 160px); /* FF3.6-15 */
     background: -webkit-linear-gradient(-30deg, rgb(217, 94, 31) 40px, rgb(120, 151, 22) 160px); /* Chrome10-25,Safari5.1-6 */
@@ -261,19 +271,23 @@ a {
     border-radius: 50%;
     display: block;
     height: 200px;
+    margin-right: auto;
     margin-bottom: .5em;
+    margin-left: auto;
     opacity: .95;
     width: 200px;
 
     border-radius: 50%;
 }
-.mjr figure > a img {
+.mjr figure > a img,
+.eh figure > a img {
     border-radius: 50%;
     height: 200px;
     opacity: .65;
     width: 200px;
 }
-.mjr figure > figcaption {
+.mjr figure > figcaption,
+.eh figure > figcaption {
     display: block;
     font-size: 14px; font-size: .875rem;
     text-align: center;
@@ -282,19 +296,23 @@ a {
 
 
 @media screen and (min-width: 600px) {
-    .mjr figure > a {
+    .mjr figure > a,
+    .eh figure > a {
         overflow: hidden;
     }
-    .mjr figure > a img {
+    .mjr figure > a img,
+    .eh figure > a img {
         transition: opacity .125s ease, transform .5s ease;
     }
-    .mjr figure > a:hover img {
+    .mjr figure > a:hover img,
+    .eh figure > a:hover img {
         opacity: .75;
         transform: rotate(360deg) scale(1.125);
     }
 }
 @media screen and (min-width: 900px) {
-    .wrapper-mjr {
+    .wrapper-mjr,
+    .wrapper-eh {
         background: white;
         padding-top: 60px;
         padding-right: 20px;
@@ -304,40 +322,47 @@ a {
     @supports(
         -webkit-clip-path: polygon(2% 3%, 99% 3%, 99% 85%, 75% 86%, 75% 100%, 72% 86%, 1% 85%))
         or (clip-path: polygon(2% 3%, 99% 3%, 99% 85%, 75% 86%, 75% 100%, 72% 86%, 1% 85%)) {
-        .wrapper-mjr {
+        .wrapper-mjr,
+        .wrapper-eh {
             /* http://bennettfeely.com/clippy/ */
             -webkit-clip-path: polygon(2% 3%, 99% 3%, 99% 85%, 75% 86%, 75% 100%, 72% 86%, 1% 85%);
             clip-path: polygon(2% 3%, 99% 3%, 99% 85%, 75% 86%, 75% 100%, 72% 86%, 1% 85%);
             padding-bottom: 110px;
         }
     }
-    .mjr {
+    .mjr,
+    .eh {
         align-items: center;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         padding-top: 0;
     }
-    .mjr figure {
+    .mjr figure,
+    .eh figure {
         flex-basis: calc(33.333333333% - 20px);
         max-width: calc(33.333333333% - 20px);
         margin-bottom: 0;
     }
-    .mjr p {
+    .mjr > p,
+    .eh > div {
         flex-basis: calc(66.666666667% - 20px);
         max-width: calc(66.666666667% - 20px);
     }
     @supports (display: grid) {
-        .mjr {
+        .mjr,
+        .eh {
             display: grid;
             grid-gap: 20px;
             grid-template-columns: 2fr 1fr;
             grid-template-areas: "slot-1 slot-2";
         }
-        .mjr figure {
+        .mjr figure,
+        .eh figure {
             max-width: 100%;
         }
-        .mjr p {
+        .mjr > p,
+        .eh > div {
             max-width: 100%;
         }
     }
@@ -366,10 +391,38 @@ a {
 
     height: 200px;
 }
+.parallax-jn {
+    background-image: url('/ui/img/jn-map.png');
+    background-size: cover;
+}
+
+.parallax-jn .overlay {
+    align-items: center;
+    background: rgba(255, 255, 255, .75);
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    text-align: center;
+    width: 100%;
+}
+    .parallax-jn .overlay .heading-text {
+        font-size: 36px; font-size: 2.25rem;
+        font-weight: bold;
+        line-height: 1.25em;
+    }
+    .parallax-jn .overlay .heading-text span {
+        display: block;
+        font-size: 1rem;
+        line-height: 1.25rem;
+        text-transform: uppercase;
+    }
 
 @media (hover: hover) {
     .parallax {
         background-attachment: fixed;
+    }
+    .parallax-jn {
+        background-size: 100% auto;
     }
 }
 
@@ -377,11 +430,18 @@ a {
     .parallax {
         background-image: url('/ui/img/desk-med.png');
     }
-
+    .parallax-jn {
+        background-image: url('/ui/img/jn-map-med.png');
+        background-size: cover;
+    }
 }
 @media screen and (max-width: 400px) {
     .parallax {
         background-image: url('/ui/img/desk-sm.png');
+    }
+    .parallax-jn {
+        background-image: url('/ui/img/jn-map-sm.png');
+        background-size: cover;
     }
 }
 
@@ -390,17 +450,31 @@ a {
         background-size: 135% auto;
         height: 300px;
     }
+    .parallax-jn {
+        background-size: cover;
+    }
 }
 @media screen and (min-width: 900px) {
     .parallax {
         /*background-size: 122.5% auto;*/
         height: 400px;
     }
+    .parallax-jn {
+        background-size: cover;
+    }
+        .parallax-jn .overlay .heading-text {
+            font-size: 48px; font-size: 3rem;
+            font-weight: bold;
+            line-height: 1.25em;
+        }
 }
 @media screen and (min-width: 1280px) {
     .parallax {
         /*background-size: cover;*/
         height: 500px;
+    }
+    .parallax-jn {
+        background-size: cover;
     }
 }
 
@@ -544,6 +618,18 @@ a {
            -moz-columns: 4;
                 columns: 4;
     }
+}
+
+.jn {
+
+}
+.jn-logo {
+    display: block;
+    height: auto;
+    max-width: 280px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
 }
 
 footer {
