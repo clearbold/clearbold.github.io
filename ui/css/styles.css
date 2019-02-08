@@ -72,6 +72,7 @@ a {
 }
 .wrapper-content-text li {
     margin-top: 1em;
+    padding-left: .5em;
 }
 
 .outer {
@@ -651,6 +652,7 @@ a {
     height: auto;
     max-width: 280px;
     margin-right: auto;
+    margin-bottom: -1.75em;
     margin-left: auto;
     width: 100%;
 }
@@ -667,6 +669,16 @@ a {
     background: rgb(217, 94, 31);
     border: 1px solid rgb(217, 94, 31);
     color: white;
+}
+    .jn section {
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 980px;
+    }
+@media screen and (min-width: 1280px) {
+    .jn ul {
+        padding-right: 100px;
+    }
 }
 
 footer {
