@@ -36,6 +36,17 @@ a {
     color: inherit;
 }
 
+.visually-hidden {
+    border:0!important;
+    clip:rect(0 0 0 0)!important;
+    height:1px!important;
+    margin:-1px!important;
+    overflow:hidden!important;
+    padding:0!important;
+    position: absolute!important;
+    width:1px!important;
+}
+
 .wrapper {
     margin-right: auto;
     margin-left: auto;
@@ -416,6 +427,9 @@ a {
         line-height: 1.25rem;
         text-transform: uppercase;
     }
+    .parallax-jn .overlay .heading-text span:last-child {
+        margin-top: .5em;
+    }
 
 @media (hover: hover) {
     .parallax {
@@ -630,6 +644,9 @@ a {
     margin-right: auto;
     margin-left: auto;
     width: 100%;
+}
+.about-jn {
+    opacity: .75;
 }
 
 footer {
