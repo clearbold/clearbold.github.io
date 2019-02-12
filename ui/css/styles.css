@@ -660,6 +660,13 @@ a {
     opacity: .75;
 }
 .jn .button {
+    background: rgb(217, 94, 31);
+    border: 2px solid rgb(217, 94, 31);
+    color: white;
+
+    font-size: 16px; font-size: 1rem;
+    padding: 10px 20px;
+
     display: block;
     margin-top: 72px;
     margin-right: auto;
@@ -667,9 +674,9 @@ a {
     max-width: 200px;
 }
 .jn .button:hover {
-    background: rgb(217, 94, 31);
-    border: 1px solid rgb(217, 94, 31);
-    color: white;
+    background: transparent;
+    border: 2px solid rgb(217, 94, 31);
+    color: rgb(217, 94, 31);
 }
     .jn section {
         margin-right: auto;
