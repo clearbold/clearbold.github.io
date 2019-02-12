@@ -675,8 +675,9 @@ a {
 }
 .jn .button:hover {
     background: transparent;
+    background: rgba(217, 94, 31, .875);
     border: 2px solid rgb(217, 94, 31);
-    color: rgb(217, 94, 31);
+    /*color: rgb(217, 94, 31);*/
 }
     .jn section {
         margin-right: auto;
