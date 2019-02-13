@@ -684,6 +684,11 @@ a {
         margin-left: auto;
         max-width: 980px;
     }
+    .email-signup {
+        font-size: 14px; font-size: .875rem;
+        margin-top: 32px; margin-top: 2rem;
+        text-align: center;
+    }
 @media screen and (min-width: 1280px) {
     .jn ul {
         padding-right: 100px;
