@@ -26,3 +26,6 @@ excerpt_separator: <!--more-->
 # https://github.com/jekyll/jekyll/issues/332
 # baseurl:          /clearbold
 baseurl:          ""
+
+plugins:
+  - jekyll-redirect-from
