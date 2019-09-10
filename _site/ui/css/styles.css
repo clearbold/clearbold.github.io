@@ -196,20 +196,23 @@ a {
     .card:last-child {
         margin-bottom: 0;
     }
-    .services .card:nth-of-type(4) {
+    .services .card:nth-of-type(7) {
         border-color: rgb(217, 94, 31);
     }
-    .services .card:nth-of-type(3) {
+    .services .card:nth-of-type(6) {
         border-color: rgb(150, 145, 33);
     }
-    .services .card:nth-of-type(2) {
+    .services .card:nth-of-type(5) {
         border-color: rgb(132, 195, 220);
     }
-    .services .card:nth-of-type(1) {
+    .services .card:nth-of-type(4) {
         border-color: rgb(82, 44, 62);
     }
     .services .card-craft {
         border-color: #E5422B;
+    }
+    .services .card-salesforce {
+        border-color: #00A1E0;
     }
 .services .card h2 {
     font-size: 18px; font-size: 1.125rem;
