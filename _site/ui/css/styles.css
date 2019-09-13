@@ -211,9 +211,15 @@ a {
     .services .card-craft {
         border-color: #E5422B;
     }
+        /*.services .card-craft h2 {
+            color: #E5422B;
+        }*/
     .services .card-salesforce {
         border-color: #00A1E0;
     }
+        /*.services .card-salesforce h2 {
+            color: #00A1E0;
+        }*/
 .services .card h2 {
     font-size: 18px; font-size: 1.125rem;
     margin-bottom: 16px; margin-bottom: 1rem;
