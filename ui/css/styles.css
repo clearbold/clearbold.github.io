@@ -217,6 +217,9 @@ a {
     .services .card-salesforce {
         border-color: #00A1E0;
     }
+    .services .card-tech {
+        border-color: #444;
+    }
         /*.services .card-salesforce h2 {
             color: #00A1E0;
         }*/
