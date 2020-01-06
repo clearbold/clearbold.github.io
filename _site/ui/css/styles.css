@@ -811,6 +811,20 @@ footer {
         margin-bottom: 20px;
     }
 }
+@media screen and (min-width: 900px) {
+    #lightbox-content {
+        max-width: 800px;
+        padding-right: 80px;
+        padding-left: 80px;
+    }
+}
+@media screen and (min-width: 1280px) {
+    #lightbox-content {
+        max-width: 900px;
+        padding-right: 100px;
+        padding-left: 100px;
+    }
+}
 #lightbox-content p:not(:first-of-type),
 #lightbox-content ul {
     margin-top: 20px;
