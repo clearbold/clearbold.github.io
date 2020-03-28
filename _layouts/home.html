@@ -37,6 +37,9 @@
     </header>
     <div class="outer-content"><main id="content" role="main"><div class="panel panel-top intro">
         <div class="wrapper wrapper-content">
+            <div class="wintergreen">
+                <p><b>Wintergreen</b> is a new full service branding, design, and technology studio backed by Clearbold. Visit&nbsp;<a href="https://wintergreendesign.com" target="_blank">wintergreendesign.com</a>.</p>
+            </div>
             <p><b>Clearbold</b> helps agency &amp; corporate teams, small businesses, and nonprofits launch successful and sustainable websites, email campaigns, and data-driven&nbsp;projects. <a href="https://clearbold.wufoo.com/forms/lets-work-together/">Get&nbsp;a&nbsp;quote</a>.</p>
         </div>
     </div>
@@ -172,6 +175,13 @@
             );
         });
 
+        document.onkeydown = function(evt) {
+            evt = evt || window.event;
+            if (evt.keyCode == 27) {
+                document.getElementById('lightbox').style.display = 'none';
+                document.body.classList.remove('lightbox-active');
+            }
+        };
         document.getElementById('lightbox').addEventListener('click', function(e) {
             document.getElementById('lightbox').style.display = 'none';
             document.body.classList.remove('lightbox-active');

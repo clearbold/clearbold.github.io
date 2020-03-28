@@ -76,6 +76,7 @@ a {
 }
 
 .outer {
+    background-attachment: fixed;
     background: rgb(217, 94, 31);
     background: -moz-linear-gradient(-30deg, rgb(217, 94, 31) 40px, rgb(120, 151, 22) 40px 250px, rgb(120, 151, 22) 58%, rgb(217, 94, 31) 99%); /* FF3.6-15 */
     background: -webkit-linear-gradient(-30deg, rgb(217, 94, 31) 40px, rgb(120, 151, 22) 250px, rgb(120, 151, 22) 58%, rgb(217, 94, 31) 99%); /* Chrome10-25,Safari5.1-6 */
@@ -162,6 +163,25 @@ a {
 
 .intro {
     font-size: 18px; font-size: 1.125rem;
+
+    padding-top: 0;
+}
+    .intro .wrapper .wintergreen {
+        color: #205B81;
+        font-size: 14px; font-size: .875rem;
+        margin-top: 20px;
+        margin-bottom: 80px;
+    }
+    .intro .wrapper .wintergreen b,
+    .intro .wrapper .wintergreen a {
+        /*color: #205B81;*/
+    }
+@media screen and (min-width: 900px) {
+    .intro .wrapper .wintergreen {
+        font-size: 16px; font-size: 1rem;
+        margin-top: 20px;
+        margin-bottom: 80px;
+    }
 }
 .intro a {
     font-weight: bold;
