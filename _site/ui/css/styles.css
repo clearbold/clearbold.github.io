@@ -168,19 +168,21 @@ a {
 }
     .intro .wrapper .wintergreen {
         color: #205B81;
+        display: block;
         font-size: 14px; font-size: .875rem;
+        font-weight: normal;
         margin-top: 20px;
         margin-bottom: 80px;
+        text-decoration: none;
     }
-    .intro .wrapper .wintergreen b,
-    .intro .wrapper .wintergreen a {
-        /*color: #205B81;*/
+    .intro .wrapper .wintergreen span {
+        font-weight: bold;
+        text-decoration: underline;
     }
 @media screen and (min-width: 900px) {
     .intro .wrapper .wintergreen {
         font-size: 16px; font-size: 1rem;
-        margin-top: 20px;
-        margin-bottom: 80px;
+        margin-bottom: 78px;
     }
 }
 .intro a {
