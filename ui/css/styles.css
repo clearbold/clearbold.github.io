@@ -165,6 +165,7 @@ a {
     font-size: 18px; font-size: 1.125rem;
 
     padding-top: 0;
+    padding-bottom: 94px;
 }
     .intro .wrapper .wintergreen {
         color: #205B81;
@@ -172,7 +173,7 @@ a {
         font-size: 14px; font-size: .875rem;
         font-weight: normal;
         margin-top: 20px;
-        margin-bottom: 80px;
+        margin-bottom: 84px;
         text-decoration: none;
     }
     .intro .wrapper .wintergreen span {
@@ -182,7 +183,7 @@ a {
 @media screen and (min-width: 900px) {
     .intro .wrapper .wintergreen {
         font-size: 16px; font-size: 1rem;
-        margin-bottom: 78px;
+        margin-bottom: 82px;
     }
 }
 .intro a {
