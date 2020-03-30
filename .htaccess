@@ -1,0 +1,20 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    RewriteCond %{HTTP_HOST} ^www.clearbold.com [NC]
+    RewriteRule ^(.*)$ https://clearbold.com/$1 [L,R=301,NC]
+
+    RewriteCond %{HTTP:X-Forwarded-Proto} !^https
+    RewriteRule ^(.*)$ https://clearbold.com/$1 [L,R=301,NC]
+
+    RewriteRule ^craft$ / [R=301,L]
+    RewriteRule ^craft/$ / [R=301,L]
+    RewriteRule ^drupal$ / [R=301,L]
+    RewriteRule ^drupal/$ / [R=301,L]
+    RewriteRule ^past-work$ / [R=301,L]
+    RewriteRule ^past-work/$ / [R=301,L]
+    RewriteRule ^news$ / [R=301,L]
+    RewriteRule ^news/$ / [R=301,L]
+    RewriteRule ^value$ / [R=301,L]
+    RewriteRule ^value/$ / [R=301,L]
+</IfModule>

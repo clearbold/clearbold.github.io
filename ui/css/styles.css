@@ -163,7 +163,8 @@ a {
 
 .intro {
     font-size: 18px; font-size: 1.125rem;
-
+}
+.intro-promo {
     padding-top: 0;
     padding-bottom: 94px;
 }
