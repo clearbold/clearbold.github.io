@@ -869,15 +869,13 @@ footer {
     color: rgba(0, 0, 0, .75);
 }
 
-.bio .wrapper-content {
-    max-width: 960px;
-}
-.bio .wrapper-content > article {
-    padding-top: 90px;
+@media all and (min-width: 800px) {
+    .bio .wrapper-content > article {
+        padding-right: 20%;
+    }
 }
 .bio .pubs {
     padding-top: 90px;
-    padding-bottom: 90px;
 }
 .bio .pubs article {
     margin-bottom: 1em;
