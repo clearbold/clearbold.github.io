@@ -63,7 +63,7 @@ a {
     }
 }
 
-.wrapper-content-text p,
+.wrapper-content-text p:not(:nth-of-type(1)),
 .wrapper-content-text ul {
     margin-top: 1em;
 }
