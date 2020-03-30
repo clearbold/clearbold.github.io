@@ -871,7 +871,7 @@ footer {
 
 @media all and (min-width: 800px) {
     .bio .wrapper-content > article {
-        padding-right: 20%;
+        max-width: 800px;
     }
 }
 .bio .pubs {
