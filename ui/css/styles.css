@@ -877,7 +877,7 @@ footer {
 .bio .pubs {
     padding-top: 90px;
 }
-.bio .pubs article {
+.bio .pubs article:not(:last-of-type) {
     margin-bottom: 1em;
 }
 .bio .pubs h2,
