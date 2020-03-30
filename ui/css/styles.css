@@ -868,3 +868,22 @@ footer {
 #lightbox-content b {
     color: rgba(0, 0, 0, .75);
 }
+
+.bio .wrapper-content {
+    max-width: 960px;
+}
+.bio .wrapper-content > article {
+    padding-top: 90px;
+}
+.bio .pubs {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+.bio .pubs article {
+    margin-bottom: 1em;
+}
+.bio .pubs h2,
+.bio article h1 {
+    font-size: 24px;
+    margin-bottom: 1em;
+}
