@@ -882,6 +882,38 @@ footer {
 }
 .bio .pubs h2,
 .bio article h1 {
+    color: rgba(0, 0, 0, .8125);
     font-size: 24px;
     margin-bottom: 1em;
+}
+.bio .panel {
+    padding-top: 44px;
+}
+.bio article img {
+    display: block;
+    height: auto;
+    margin-right: -1%;
+    margin-bottom: 30px;
+    margin-left: -1%;
+    width: 102%;
+}
+@media all and (max-width: 840px) {
+    body {
+        overflow-x: hidden;
+    }
+    .bio .panel {
+        padding-top: 0;
+    }
+    .bio article img {
+        margin-left: -16%;
+        margin-right: -4%;
+        width: 120%;
+    }
+}
+@media all and (max-width: 600px) {
+    .bio article img {
+        margin-left: -35%;
+        margin-right: -15%;
+        width: 150%;
+    }
 }
