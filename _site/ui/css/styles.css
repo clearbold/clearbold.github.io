@@ -795,8 +795,12 @@ footer {
   margin-bottom: 1em; }
 
 .bio .pubs h2,
+.bio article h1,
+.bio b {
+  color: rgba(0, 0, 0, 0.8125); }
+
+.bio .pubs h2,
 .bio article h1 {
-  color: rgba(0, 0, 0, 0.8125);
   font-size: 24px;
   margin-bottom: 1em; }
 
