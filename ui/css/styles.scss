@@ -1,3 +1,5 @@
+---
+---
 @supports (display: grid) {
     .no-cssgrid {
         display: none;
@@ -747,126 +749,133 @@ footer {
     padding-top: 40px;
 }
 
+.lightbox-disabled {
+    #lightbox {
+        display: none;
+    }
+}
 .lightbox-active {
     overflow: hidden;
 }
-#lightbox {
-    background: rgba(0, 0, 0, .75);
-    align-items: flex-start;
-    display: flex;
-    justify-content: center;
-    left: 0;
-    overflow-y: scroll;
-    padding-top: 50px;
-    padding-right: 20px;
-    padding-left: 20px;
-    position: fixed;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    z-index: 9;
-}
-.lightbox-content-wrapper {
-    padding-bottom: 50px;
-}
-.lightbox-close {
-    background: transparent;
-    box-shadow: none;
-    webkit-appearance: none;
-    border: 0;
-    cursor: pointer; cursor: hand;
-    height: 40px;
-    right: 5px;
-    position: absolute;
-    top: 5px;
-    width: 40px;
-}
-    .lightbox-close > div {
+.lightbox-active {
+    #lightbox {
         background: rgba(0, 0, 0, .75);
-        border-radius: 3px;
-        font-size: 12px;
-        height: 3px;
-        left: 10px;
-        line-height: 3px;
-        position: absolute;
-        width: 20px;
-        -webkit-transition: .1s ease-in-out;
-        -moz-transition: .1s ease-in-out;
-        -o-transition: .1s ease-in-out;
-        transition: .1s ease-in-out;
-    }
-        .lightbox-close > div:nth-of-type(1) {
-            top: 20px;
-            -webkit-transform: rotate(135deg);
-            -moz-transform: rotate(135deg);
-            -o-transform: rotate(135deg);
-            transform: rotate(135deg);
-        }
-        .lightbox-close > div:nth-of-type(2) {
-            top: 20px;
-            -webkit-transform: rotate(-135deg);
-            -moz-transform: rotate(-135deg);
-            -o-transform: rotate(-135deg);
-            transform: rotate(-135deg);
-        }
-
-#lightbox-content {
-    background: white;
-    border-radius: 2px;
-    max-width: 700px;
-    padding-top: 80px;
-    padding-right: 40px;
-    padding-bottom: 80px;
-    padding-left: 40px;
-    position: relative;
-    width: 100%;
-}
-#lightbox-content .date {
-    margin-bottom: 40px;
-}
-@media all and (max-width: 600px) {
-    #lightbox-content {
-        padding-top: 60px;
+        align-items: flex-start;
+        display: flex;
+        justify-content: center;
+        left: 0;
+        overflow-y: scroll;
+        padding-top: 50px;
         padding-right: 20px;
-        padding-bottom: 60px;
         padding-left: 20px;
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        z-index: 9;
+    }
+    .lightbox-content-wrapper {
+        padding-bottom: 50px;
+    }
+    .lightbox-close {
+        background: transparent;
+        box-shadow: none;
+        webkit-appearance: none;
+        border: 0;
+        cursor: pointer; cursor: hand;
+        height: 40px;
+        right: 5px;
+        position: absolute;
+        top: 5px;
+        width: 40px;
+    }
+        .lightbox-close > div {
+            background: rgba(0, 0, 0, .75);
+            border-radius: 3px;
+            font-size: 12px;
+            height: 3px;
+            left: 10px;
+            line-height: 3px;
+            position: absolute;
+            width: 20px;
+            -webkit-transition: .1s ease-in-out;
+            -moz-transition: .1s ease-in-out;
+            -o-transition: .1s ease-in-out;
+            transition: .1s ease-in-out;
+        }
+            .lightbox-close > div:nth-of-type(1) {
+                top: 20px;
+                -webkit-transform: rotate(135deg);
+                -moz-transform: rotate(135deg);
+                -o-transform: rotate(135deg);
+                transform: rotate(135deg);
+            }
+            .lightbox-close > div:nth-of-type(2) {
+                top: 20px;
+                -webkit-transform: rotate(-135deg);
+                -moz-transform: rotate(-135deg);
+                -o-transform: rotate(-135deg);
+                transform: rotate(-135deg);
+            }
+
+    #lightbox-content {
+        background: white;
+        border-radius: 2px;
+        max-width: 700px;
+        padding-top: 80px;
+        padding-right: 40px;
+        padding-bottom: 80px;
+        padding-left: 40px;
+        position: relative;
+        width: 100%;
     }
     #lightbox-content .date {
-        margin-bottom: 20px;
+        margin-bottom: 40px;
     }
-}
-@media screen and (min-width: 900px) {
-    #lightbox-content {
-        max-width: 800px;
-        padding-right: 80px;
-        padding-left: 80px;
+    @media all and (max-width: 600px) {
+        #lightbox-content {
+            padding-top: 60px;
+            padding-right: 20px;
+            padding-bottom: 60px;
+            padding-left: 20px;
+        }
+        #lightbox-content .date {
+            margin-bottom: 20px;
+        }
     }
-}
-@media screen and (min-width: 1280px) {
-    #lightbox-content {
-        max-width: 900px;
-        padding-right: 100px;
-        padding-left: 100px;
+    @media screen and (min-width: 900px) {
+        #lightbox-content {
+            max-width: 800px;
+            padding-right: 80px;
+            padding-left: 80px;
+        }
     }
-}
-#lightbox-content p:not(:first-of-type),
-#lightbox-content ul {
-    margin-top: 20px;
-}
-#lightbox-content ul {
-    padding-left: 1em;
-}
-#lightbox-content .cta-links {
-    font-size: 1.25em;
-    font-weight: bold;
-    list-style: none;
-    padding-left: 0;
-}
-#lightbox-content li:not(:first-of-type) {
-    margin-top: 10px;
-}
-#lightbox-content b {
-    color: rgba(0, 0, 0, .75);
+    @media screen and (min-width: 1280px) {
+        #lightbox-content {
+            max-width: 900px;
+            padding-right: 100px;
+            padding-left: 100px;
+        }
+    }
+    #lightbox-content p:not(:first-of-type),
+    #lightbox-content ul {
+        margin-top: 20px;
+    }
+    #lightbox-content ul {
+        padding-left: 1em;
+    }
+    #lightbox-content .cta-links {
+        font-size: 1.25em;
+        font-weight: bold;
+        list-style: none;
+        padding-left: 0;
+    }
+    #lightbox-content li:not(:first-of-type) {
+        margin-top: 10px;
+    }
+    #lightbox-content b {
+        color: rgba(0, 0, 0, .75);
+    }
 }
 
 @media all and (min-width: 800px) {

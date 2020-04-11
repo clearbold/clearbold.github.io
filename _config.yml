@@ -14,6 +14,9 @@ exclude:          ["Gemfile", "Gemfile.lock", "README.md", ".gitignore"]
 sass:
     style:        compressed
 
+sass:
+    sass_dir:     ui/css
+
 # Conversion
 markdown:         kramdown
 
