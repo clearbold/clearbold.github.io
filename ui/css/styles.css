@@ -898,7 +898,7 @@ footer {
     width: 102%;
 }
 @media all and (max-width: 840px) {
-    body {
+    .bio .wrapper-content {
         overflow-x: hidden;
     }
     .bio .panel {
@@ -915,5 +915,12 @@ footer {
         margin-left: -35%;
         margin-right: -15%;
         width: 150%;
+    }
+}
+@media all and (max-width: 480px) {
+    .bio article img {
+        margin-left: -62%;
+        margin-right: -38%;
+        width: 200%;
     }
 }
