@@ -44,6 +44,9 @@
         line-height: 1.5em;
         margin: 1.5em;
     }
+    li > p {
+        margin-left: 0;
+    }
     ul, ol {
         padding-left: 2em;
     }
@@ -88,11 +91,14 @@
 <p><i>Hello!</i> The following parameters and specifications apply to comp-driven website (re)design projects, to ensure a smooth transition to front-end development and building CMS templates. My goal is to outline parameters to consider how designs will behave when they&rsquo;re translated into code, or interacted with. These parameters and specifications will also help put a11y (accessibility) first, rather than retrofitting a11y to a design. (Learn more about <a href="https://uxdesign.cc/designing-for-accessibility-is-not-that-hard-c04cc4779d94">designing for a11y</a>.)</p>
 <p>Addressing these concerns in the design phase will not just help keep project scope and budget on track; thinking through these considerations will result in a more effective, bulletproof design.</p>
 <ol>
-<li>All comps must include 3 responsive states, covering all designed elements and states: Mobile, Tablet, Laptop/Desktop.</li>
+<li><p>All comps must include 3 responsive states, covering all designed elements and states: Mobile, Tablet, Laptop/Desktop.</p>
+    <p><b>What if they don&rsquo;t?</b><br />I will streamline the layout for smaller screens. Additional time (budget) may be incurred to accommodate feedback on my approach.</p></li>
 
-<li>If regions contain full-bleed content that has a <span class="code">max-width</span>, such as large hero photos, the comp&rsquo;s width should exceed that width, to show what happens beyond the design element&rsquo;s <span class="code">max-width</span> dimensions.</li>
+<li><p>If regions contain full-bleed content that has a <span class="code">max-width</span>, such as large hero photos, the comp&rsquo;s width should exceed that width, to show what happens beyond the design element&rsquo;s <span class="code">max-width</span> dimensions.</p>
+    <p><b>What if the comp doesn&rsquo;t show this?</b><br />If the design is full-bleed (or edge-to-edge), content will continue expanding to fill the browser window, which may look awkward, or I&rsquo;ll cap the width with guardrails on either side and an outer background color. Either way, additional time (budget) may be incurred to accommodate feedback on my approach.</p></li>
 
-<li>All typography treatments should be documented in a styleguide, including <span class="code">font-family</span>, <span class="code">font-weight</span>, <span class="code">color</span>, and <span class="code">font-size</span>. Any single-use deviations from those styles must be annotated in comps.</li>
+<li><p>All typography treatments should be documented in a styleguide, including <span class="code">font-family</span>, <span class="code">font-weight</span>, <span class="code">color</span>, and <span class="code">font-size</span>. Any single-use deviations from those styles must be annotated in comps.</p>
+    <p><b>What if this isn&rsquo;t provided?</b><br />For the most part, I can open your PSD in Affinity Designer to grab these values. However, it saves time on my part to not have to parse PSDs to track down the font spec, which I load and code as a first step. It&rsquo;s also helpful for you to design within the constraints of a concise styleguide, to facilitate front-end development and optimize performance.</p></li>
 
 <li>Styleguide must include specs for:
 
@@ -108,13 +114,15 @@
 
 <li>Icons should be produced and provided as SVGs. Bitmapped UI and brand elements should be provided as (minimum) @2x sliced PNG-24s with transparent backgrounds. @2x images should always have even-numbered width and height dimensions.</li>
 
-<li>Production files should be delivered as flattened PNGs, @2x, for reference and grabbing dimensions and offsets. (Your developer neither needs to keep up with versions of Photoshop or Sketch or the latest and greatest design tool, nor spend time clicking in and out of design files to fetch values that should comprise a styleguide. Grokking new design software is a budget-killer; flat PNGs are universal.)</li>
+<li><p>Production files should be delivered as flattened PNGs, @2x, for reference <strike>and grabbing dimensions and offsets</strike>. (Your developer neither needs to keep up with versions of Photoshop or Sketch or the latest and greatest design tool, nor spend time clicking in and out of design files to fetch values that should comprise a styleguide. Grokking new design software is a budget-killer; flat PNGs are universal.)</p>
+    <p><b>Updated:</b> I can open PSDs in Affinity Designer to access layers, type specs, and dimensions. It remains helpful to have flattend PNGs alongside those, though, so I can see exactly what you&rsquo;re seeing. I don&rsquo;t typically install fonts in  my OS, either, so while I can grab their values from the PSD, I don't see them render there.</p></li>
 
 <li>All form fields must include <span class="code">:focus</span> and non-<span class="code">:focus</span> states.</li>
 
 <li>Form field designs that deviate from browser defaults must include annotations noting that such designs will likely require JavaScript coding to render consistently, particularly with styled <span class="code">select</span> menus (dropdowns) or <span class="code">labels</span> inside text <span class="code">input</span> fields. Sign-off on this approach must be secured.</li>
 
-<li>(ANY styling of <span class="code">select</span> fields (dropdowns) rendered consistently across browsers will require a dependency on <a href="https://harvesthq.github.io/chosen/">Harvest&rsquo;s Chosen</a> JavaScript plugin and be achieved within its constraints.)</li>
+<li><p>(ANY styling of <span class="code">select</span> fields (dropdowns) rendered consistently across browsers will require a dependency on <a href="https://harvesthq.github.io/chosen/">Harvest&rsquo;s Chosen</a> JavaScript plugin and be achieved within its constraints.)</p>
+    <p><b>Updated:</b> One exception to this are in-page filter menus, which I usually code as divs with <span class="code">button</span> elements as JavaScript hooks.</li>
 
 <li>(Labels really shouldn&rsquo;t appear inside text <span class="code">input</span> fields. HTML5 included the <span class="code">placeholder</span> attribute for a reason, to provide an example of appropriate input and formatting. The <span class="code">label</span> should be outside the <span class="code">input</span> element, to allow proper use of the <span class="code">placeholder</span> attribute. In-field <span class="code">labels</span> also disappear on users once they&rsquo;ve entered a value, which leads to ambiguity or obfuscation as they fill in field values.)</li>
 
@@ -128,7 +136,7 @@
 
 <li>Form vs. function: Critical functionality should not be tightly locked up with visual design elements such that it can't easily expand to accommodate maintenance messages, error messages, additional fields or links, etc.</li>
 
-<li>Text shapes on the same designed element should not vary in width on a page-by-page basis to control where text wraps. If this is a goal, it must be annotated in comps and sign-off secured.</li>
+<li>Text shapes on similarly designed elements should not vary in width on a page-by-page basis to control where text wraps. If this is a goal, it must be annotated in comps and sign-off secured.</li>
 
 <li>Any scroll effects, hover effects, or other behaviors must be annotated at each breakpoint.</li>
 
