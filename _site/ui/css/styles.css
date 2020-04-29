@@ -202,16 +202,16 @@ a {
 .card:last-child {
   margin-bottom: 0; }
 
-.services .card:nth-of-type(7) {
+.services .card:nth-of-type(4) {
   border-color: #d95e1f; }
 
-.services .card:nth-of-type(6) {
+.services .card:nth-of-type(3) {
   border-color: #969121; }
 
-.services .card:nth-of-type(5) {
+.services .card:nth-of-type(2) {
   border-color: #84c3dc; }
 
-.services .card:nth-of-type(4) {
+.services .card:nth-of-type(1) {
   border-color: #522c3e; }
 
 .services .card-craft {
