@@ -216,7 +216,7 @@ a {
   right: 0;
   text-align: center;
   top: -40px;
-  transform: rotate(1deg);
+  transform: rotate(-1deg);
   width: 100%; }
   .services .aside > span {
     background-color: #f7f7f7;
