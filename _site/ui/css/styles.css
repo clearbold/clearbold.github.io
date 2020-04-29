@@ -1,6 +1,11 @@
 @supports (display: grid) {
   .no-cssgrid {
     display: none; } }
+@font-face {
+  font-family: 'nanum_penregular';
+  src: url("../fonts/nanumpenscript-regular-webfont.woff2") format("woff2"), url("../fonts/nanumpenscript-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
 * {
   margin: 0;
   padding: 0;
@@ -165,8 +170,9 @@ a {
   margin-bottom: 84px;
   text-decoration: none; }
 
-.intro .wrapper .wintergreen span {
+.intro .wrapper .wintergreen span.url {
   font-weight: bold;
+  position: relative;
   text-decoration: underline; }
 
 @media screen and (min-width: 900px) {
@@ -174,8 +180,68 @@ a {
     font-size: 16px;
     font-size: 1rem;
     margin-bottom: 82px; } }
+.aside {
+  color: rgba(0, 0, 0, 0.75);
+  font-family: nanum_penregular, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 24px;
+  font-size: 1.5rem;
+  font-weight: normal;
+  position: absolute;
+  transform: rotate(-3deg);
+  width: 150px; }
+
+.wintergreen .aside {
+  bottom: -70px;
+  right: 0; }
+  .wintergreen .aside img {
+    height: 25px;
+    position: absolute;
+    right: 50px;
+    top: -12px;
+    transform: rotate(4deg);
+    width: 10px; }
+  @media all and (min-width: 1340px) {
+    .wintergreen .aside {
+      bottom: auto;
+      top: -4px;
+      right: -214px;
+      transform: rotate(5deg); }
+      .wintergreen .aside img {
+        left: -30px;
+        right: auto;
+        top: 12px;
+        transform: rotate(-70deg); } }
+
+.services .aside {
+  right: 0;
+  text-align: center;
+  text-indent: -20px;
+  top: -40px;
+  transform: rotate(1deg);
+  width: 100%; }
+  .services .aside > span {
+    background-color: #f7f7f7;
+    display: inline-block; }
+  .services .aside img {
+    height: 14px;
+    width: auto; }
+
 .intro a {
-  font-weight: bold; }
+  font-weight: bold;
+  /*font-size: 150%;
+  line-height: inherit;
+  text-decoration: none;*/ }
+  .intro a.quote {
+    /*font-family: nanum_penregular, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;*/ }
+
+.no-whitespace {
+  white-space: nowrap; }
+
+.intro p span > img {
+  height: 24px;
+  position: relative;
+  top: 4px;
+  width: 37.647567568px; }
 
 @media screen and (min-width: 600px) {
   .intro {
@@ -187,6 +253,11 @@ a {
 .services {
   padding-top: 0;
   padding-bottom: 96px; }
+  .services .wrapper {
+    position: relative; }
+  @media screen and (min-width: 900px) {
+    .services {
+      padding-bottom: 56px; } }
 
 .services h1 {
   display: none; }
@@ -242,25 +313,18 @@ a {
     flex-direction: row;
     flex-wrap: wrap;
     margin-right: -20px;
-    margin-bottom: -40px;
     margin-left: -20px; }
 
   .card {
     flex-basis: calc(50% - 40px);
     max-width: calc(50% - 40px);
     margin-right: 20px;
-    margin-left: 20px; }
-
-  .card:last-child {
-    margin-bottom: 40px; } }
+    margin-left: 20px; } }
 @media screen and (min-width: 900px) {
   .card {
     flex-basis: calc(33.333333333% - 40px);
     max-width: calc(33.333333333% - 40px); } }
-@media screen and (min-width: 1280px) {
-  .services .wrapper-content {
-    overflow: hidden; }
-
+@media screen and (min-width: 1340px) {
   .services .cards {
     margin-right: -30px;
     /*margin-bottom: -60px;*/
@@ -270,10 +334,7 @@ a {
     flex-basis: calc(33.333333333% - 60px);
     max-width: calc(33.333333333% - 60px);
     margin-right: 30px;
-    margin-left: 30px; }
-
-  .services .card:last-child {
-    margin-bottom: 60px; } }
+    margin-left: 30px; } }
 .mjr,
 .eh {
   margin-right: auto;
@@ -492,6 +553,9 @@ a {
     background-size: cover; } }
 .craft {
   padding-bottom: 96px; }
+  @media screen and (min-width: 600px) {
+    .craft {
+      padding-bottom: 56px; } }
 
 .wrapper-craft {
   max-width: 900px; }
