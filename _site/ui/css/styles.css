@@ -181,7 +181,7 @@ a {
     font-size: 1rem;
     margin-bottom: 82px; } }
 .aside {
-  color: rgba(0, 0, 0, 0.75);
+  color: rgba(0, 0, 0, 0.675);
   font-family: nanum_penregular, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 24px;
   font-size: 1.5rem;
@@ -215,7 +215,6 @@ a {
 .services .aside {
   right: 0;
   text-align: center;
-  text-indent: -20px;
   top: -40px;
   transform: rotate(1deg);
   width: 100%; }
