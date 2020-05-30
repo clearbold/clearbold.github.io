@@ -556,6 +556,15 @@ a {
 
   .parallax-jn {
     background-size: cover; } }
+@media screen and (min-width: 1280px) {
+  .parallax {
+    background-size: 120% auto; } }
+@media screen and (min-width: 1440px) {
+  .parallax {
+    background-size: 110% auto; } }
+@media screen and (min-width: 1800px) {
+  .parallax {
+    background-size: 100% auto; } }
 .craft {
   padding-bottom: 96px; }
   @media screen and (min-width: 600px) {
