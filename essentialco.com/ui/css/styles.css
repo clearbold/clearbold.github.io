@@ -1,0 +1,441 @@
+@font-face {
+    font-family: 'futura_ptheavy';
+    src: url('../webfonts/futurapt_heavy_macroman/ftn75-webfont.eot');
+    src: url('../webfonts/futurapt_heavy_macroman/ftn75-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../webfonts/futurapt_heavy_macroman/ftn75-webfont.woff2') format('woff2'),
+         url('../webfonts/futurapt_heavy_macroman/ftn75-webfont.woff') format('woff'),
+         url('../webfonts/futurapt_heavy_macroman/ftn75-webfont.ttf') format('truetype'),
+         url('../webfonts/futurapt_heavy_macroman/ftn75-webfont.svg#futura_ptmedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'futura_ptdemi';
+    src: url('../webfonts/futurapt_demi_macroman/ftn65-webfont.eot');
+    src: url('../webfonts/futurapt_demi_macroman/ftn65-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../webfonts/futurapt_demi_macroman/ftn65-webfont.woff2') format('woff2'),
+         url('../webfonts/futurapt_demi_macroman/ftn65-webfont.woff') format('woff'),
+         url('../webfonts/futurapt_demi_macroman/ftn65-webfont.ttf') format('truetype'),
+         url('../webfonts/futurapt_demi_macroman/ftn65-webfont.svg#futura_ptmedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'futura_ptmedium';
+    src: url('../webfonts/futurapt_medium_macroman/ftn55-webfont.eot');
+    src: url('../webfonts/futurapt_medium_macroman/ftn55-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../webfonts/futurapt_medium_macroman/ftn55-webfont.woff2') format('woff2'),
+         url('../webfonts/futurapt_medium_macroman/ftn55-webfont.woff') format('woff'),
+         url('../webfonts/futurapt_medium_macroman/ftn55-webfont.ttf') format('truetype'),
+         url('../webfonts/futurapt_medium_macroman/ftn55-webfont.svg#futura_ptmedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'futura_ptbook';
+    src: url('../webfonts/futurapt_book_macroman/ftn45-webfont.eot');
+    src: url('../webfonts/futurapt_book_macroman/ftn45-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../webfonts/futurapt_book_macroman/ftn45-webfont.woff2') format('woff2'),
+         url('../webfonts/futurapt_book_macroman/ftn45-webfont.woff') format('woff'),
+         url('../webfonts/futurapt_book_macroman/ftn45-webfont.ttf') format('truetype'),
+         url('../webfonts/futurapt_book_macroman/ftn45-webfont.svg#futura_ptmedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-text-size-adjust: none;
+    zoom: 1;
+}
+
+body {
+    background: #001435;
+    font-family: 'futura_ptmedium', sans-serif;
+    font-size: 18px;
+    letter-spacing: .5px;
+    line-height: 24px;
+    -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;
+}
+
+h1 {
+    font-family: 'futura_ptheavy', sans-serif;
+    font-size: 28px;
+    font-weight: normal;
+    letter-spacing: 4px;
+    line-height: 32px;
+    margin-bottom: 34px;
+    text-align: center;
+    text-transform: uppercase;
+}
+h2 {
+    font-family: 'futura_ptmedium', sans-serif;
+    font-size: 28px;
+    font-weight: normal;
+    line-height: 36px;
+    margin-bottom: 12px;
+}
+h3 {
+    font-weight: normal;
+    line-height: 1em;
+    font-size: 20px;
+}
+p {
+    margin-bottom: 1em;
+}
+p:last-child {
+    margin-bottom: 0;
+}
+p.lineup { /* form fields */
+    height: 48px;
+    line-height: 48px;
+}
+
+.charat {
+    position: relative;
+    top: 2px;
+}
+
+button,
+form input[type=submit] {
+    background: #006563;
+    border: none;
+    border-radius: 0;
+    color: #ffffff;
+    cursor: pointer; cursor: hand;
+    font-family: 'futura_ptmedium', sans-serif;
+    font-size: 16px;
+    height: 48px;
+    padding-right: 16px;
+    padding-left: 16px;
+    text-transform: uppercase;
+    vertical-align: middle;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+form input[type=email],
+form input[type=text] {
+    background: #ffffff;
+    border: none;
+    border-radius: 0;
+    font-family: 'futura_ptbook', sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    height: 48px;
+    letter-spacing: normal;
+    max-width: 280px;
+    padding-right: 12px;
+    padding-left: 12px;
+    vertical-align: middle;
+    width: 100%;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+input[type=checkbox] {
+    border: none;
+    margin: 0;
+    margin-right: 4px;
+    vertical-align: middle;
+}
+form label {
+
+}
+    form label span {
+        display: inline;
+        vertical-align: middle;
+    }
+form label.text {
+    display: block;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+::-webkit-input-placeholder { color: #809aa4; }
+:-moz-placeholder { /* Firefox 18- */ color: #809aa4; }
+::-moz-placeholder {  /* Firefox 19+ */ color: #809aa4; }
+:-ms-input-placeholder { color: #809aa4; }
+
+    .outer > div {
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 1280px;
+        padding-top: 92px;
+        padding-right: 20px;
+        padding-bottom: 92px; /* Assumes line-height on p:last-child */
+        padding-left: 20px;
+        width: 100%;
+        /* clearfix via https://css-tricks.com/snippets/css/clear-fix/ */
+        content: "";
+        display: table;
+        clear: both;
+    }
+    .outer > div:last-child p:last-child {
+        margin-bottom: 0;
+    }
+.masthead {
+    background: #f3eee5;
+    padding-top: 100px;
+}
+    .masthead img {
+        color: #00364a;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+    }
+@media all and (max-width: 640px) {
+.masthead {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+    .masthead img {
+        height: auto;
+        max-width: 424px;
+        width: 100%;
+    }
+}
+.outer-intro {
+    background: #f3eee5;
+}
+    .outer-intro > div {
+        color: #00364a;
+        max-width: 700px;
+        padding-top: 78px;
+    }
+        .outer-intro p:first-child {
+            font-size: 32px;
+            line-height: 36px;
+        }
+@media all and (min-width: 640px) {
+    .outer-intro > div {
+        text-align: center;
+    }
+        .outer-intro p:first-child {
+            font-size: 40px;
+            line-height: 44px;
+        }
+}
+@media all and (min-width: 800px) {
+            .outer-intro p:first-child span {
+                display: block;
+            }
+}
+.outer-mark {
+    background: #f3eee5 url('../img/bowtie-bg2.png') no-repeat center center;
+    background-size: 2400px auto;
+    height: 440px;
+    margin-top: -150px;
+    margin-bottom: -140px;
+    z-index: 9;
+}
+    .outer-mark div {
+        padding-top: 130px;
+        padding-bottom: 0;
+    }
+        .outer-mark img {
+            display: block;
+            height: auto;
+            margin-right: auto;
+            margin-left: auto;
+            max-width: 184px;
+        }
+@media all and (min-width: 640px) {
+.outer-mark {
+    margin-top: -140px;
+    margin-bottom: -130px;
+}
+}
+@media all and (min-width: 1280px) {
+.outer-mark {
+    height: 700px;
+    margin-top: -270px;
+    margin-bottom: -260px;
+}
+    .outer-mark div {
+        padding-top: 260px;
+    }
+}
+.outer-learn {
+
+}
+    .outer-learn > div {
+        color: #f3eee5;
+        max-width: 980px;
+        padding-bottom: 108px;
+    }
+        .outer-learn h1 {
+            color: #ffffff;
+            line-height: 36px;
+            margin-bottom: 54px;
+            padding-left: 6px;
+        }
+        .outer-learn h2 {
+            color: #ceb47d;
+        }
+        .workshop {
+            margin-bottom: 62px;
+        }
+        .workshop:last-child {
+            margin-bottom: 0;
+        }
+        .workshop span.tag {
+            background: #00364a;
+            display: inline-block;
+            font-family: "futura_ptheavy", sans-serif;
+            font-size: 12px;
+            margin-right: 10px;
+            margin-bottom: 12px;
+            padding-top: 2px;
+            padding-right: 10px;
+            padding-bottom: 2px;
+            padding-left: 10px;
+            text-transform: uppercase;
+        }
+        .workshop p:nth-of-type(1) {
+            margin-bottom: 24px;
+        }
+@media all and (min-width: 800px) {
+        .outer-learn h1 {
+            font-size: 36px;
+            line-height: 36px;
+            margin-bottom: 54px;
+            padding-left: 12px;
+        }
+        .workshop {
+            float: left;
+            margin-bottom: 0;
+            padding-right: 60px;
+            padding-left: 60px;
+            text-align: center;
+            width: 50%;
+        }
+}
+.outer-connect {
+    background: #ceb47d;
+}
+    .outer-connect > div {
+        padding-bottom: 108px;
+        text-align: center;
+    }
+        .outer-connect h1,
+        .outer-connect p {
+            color: #001435;
+        }
+        .outer-connect form input[type=email] {
+            width: 66%;
+        }
+.outer-team {
+    background: #006563;
+}
+    .outer-team > div {
+        color: #ceb47d;
+        max-width: 980px;
+    }
+        .outer-team h1 {
+            color: #ffffff;
+            margin-bottom: 60px;
+        }
+        .member {
+            margin-bottom: 48px;
+            padding-right: 40px;
+            padding-left: 40px;
+            text-align: center;
+        }
+        .member:last-child {
+            margin-bottom: 0;
+        }
+            .member img {
+                display: block;
+                height: auto;
+                margin-right: auto;
+                margin-bottom: 20px;
+                margin-left: auto;
+                max-width: 300px;
+                width: 100%;
+            }
+            .member h3 {
+                color: #ffffff;
+                line-height: 24px;
+                margin-bottom: .5em;
+            }
+            .member p {
+                color: #f3eee5;
+                font-family: "futura_ptheavy", sans-serif;
+                font-size: 16px;
+                line-height: 1em;
+                text-transform: uppercase;
+            }
+@media all and (min-width: 480px) {
+        .outer-team h1 {
+            margin-bottom: 84px;
+        }
+}
+@media all and (min-width: 640px) {
+        .outer-team h1 {
+            color: #ffffff;
+            margin-bottom: 92px;
+        }
+        .member {
+            float: left;
+            margin-bottom: 0;
+            width: 50%;
+        }
+}
+.outer-hire {
+    background: #00364a;
+}
+    .outer-hire > div {
+        color: #f3eee5;
+        padding-bottom: 108px;
+    }
+        .outer-hire h1 {
+            color: #ffffff;
+        }
+        .outer-hire p.button {
+            padding-top: 8px;
+        }
+        .outer-hire ::-webkit-input-placeholder { color: #ceb47d; }
+        .outer-hire :-moz-placeholder { /* Firefox 18- */ color: #ceb47d; }
+        .outer-hire ::-moz-placeholder {  /* Firefox 19+ */ color: #ceb47d; }
+        .outer-hire :-ms-input-placeholder { color: #ceb47d; }
+@media all and (min-width: 640px) {
+    .outer-hire > div {
+        text-align: center;
+    }
+}
+.outer-footer {
+    background: #001435;
+}
+    .outer-footer > div {
+        margin-right: auto;
+        margin-left: auto;
+        padding-top: 56px;
+        padding-bottom: 56px;
+        max-width: 1280px;
+    }
+        .outer-footer p,
+        .outer-footer a {
+            color: #ceb47d;
+        }
+        .outer-footer p {
+            font-size: 16px;
+            text-align: center;
+        }
+        .outer-footer a {
+            display: block;
+            text-decoration: none;
+        }
+        span.bullet {
+            display: none;
+        }
+@media all and (min-width: 480px) {
+        .outer-footer a {
+            display: inline;
+        }
+        span.bullet {
+            display: inline;
+        }
+}
