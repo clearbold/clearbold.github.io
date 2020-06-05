@@ -738,6 +738,8 @@ a {
   .platform-tag.platform-salesforce {
     background-color: #00A1E0;
     color: white; }
+  .platform-tag.platform-postmark {
+    background-color: #ffde00; }
   .platform-tag.platform-drupal {
     background-color: #009CDE;
     color: white; }
