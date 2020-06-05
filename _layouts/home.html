@@ -121,7 +121,7 @@
             const intersectionObserver = new IntersectionObserver(function(entries) {
                 let entry = entries[0];
                 if (entry.isIntersecting) {
-                    setTimeout(function() { element.focus() }, 500)
+                    setTimeout(function() { element.focus({preventScroll:true}) }, 500)
                 }
             });
             // start observing
