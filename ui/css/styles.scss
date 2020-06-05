@@ -871,9 +871,9 @@ a {
 
 .wrapper-clients {
     li {
-        & > span.sibling-tag + span,
-        & > a + span {
-            margin-left: 5px;
+        & > span.sibling-tag,
+        & > a:nth-of-type(1) {
+            margin-right: 5px;
         }
     }
 }

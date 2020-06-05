@@ -744,8 +744,8 @@ a {
     background-color: #009CDE;
     color: white; }
 
-.wrapper-clients li > span.sibling-tag + span, .wrapper-clients li > a + span {
-  margin-left: 5px; }
+.wrapper-clients li > span.sibling-tag, .wrapper-clients li > a:nth-of-type(1) {
+  margin-right: 5px; }
 
 .jn-logo {
   display: block;
