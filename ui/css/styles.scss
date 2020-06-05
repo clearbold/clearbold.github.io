@@ -824,6 +824,53 @@ a {
     }
 }
 
+.platform-tag {
+    background-color: #ccc;
+    border-radius: 3px;
+    display: inline-block;
+    font-size: 75%;
+    font-weight: bold;
+    height: 20px; height: 1.25rem;
+    line-height: 20px; line-height: 1.25rem;
+    padding-right: 5px;
+    padding-left: 5px;
+    position: relative;
+    top: -1px;
+    &.platform-craft {
+        background-color: #E5422B;
+        color: white;
+    }
+    &.platform-slim {
+        background-color: #719e40;
+        color: white;
+    }
+    &.platform-leaflet {
+        background-color: #199900;
+        color: white;
+    }
+    &.platform-cm {
+        background-color: #7856FF;
+        color: white;
+    }
+    &.platform-vue {
+        background-color: #4fc08d;
+        color: white;
+    }
+    &.platform-drupal {
+        background-color: #009CDE;
+        color: white;
+    }
+}
+
+.wrapper-clients {
+    li {
+        & > span.sibling-tag + span,
+        & > a + span {
+            margin-left: 5px;
+        }
+    }
+}
+
 .jn {
 
 }
