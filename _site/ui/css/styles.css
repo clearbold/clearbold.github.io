@@ -749,6 +749,9 @@ a {
   .platform-tag.platform-drupal {
     background-color: #009CDE;
     color: white; }
+  .platform-tag.platform-stripe {
+    background-color: #635bff;
+    color: white; }
 
 .wrapper-clients li > span.sibling-tag, .wrapper-clients li > a:nth-of-type(1) {
   margin-right: 5px; }
