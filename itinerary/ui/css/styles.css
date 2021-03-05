@@ -1,0 +1,453 @@
+* {
+    margin: 0; padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-text-size-adjust:none !important; -ms-text-size-adjust:none !important;
+}
+
+/*
+   font-family: 'IM Fell DW Pica', serif;
+   font-family: 'IM Fell DW Pica SC', serif;
+*/
+
+body {
+    background: #e7dfcc;
+    color: #3d3934;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+a {
+    color: #003593;
+}
+
+.logo-header-wrapper {
+    background: white;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+    .logo-header {
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+        .logo-header span {
+            display: block;
+            font-size: 11px;
+            font-weight: bold;
+            margin-bottom: .5em;
+            text-transform: uppercase;
+        }
+
+.wrapper {
+    padding-right: 40px;
+    padding-left: 40px;
+}
+.wrapper-content {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 900px;
+}
+
+h1 {
+    border-bottom: 3px solid #3d3934;
+    font-family: 'IM Fell DW Pica SC', serif;
+    font-size: 32px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    padding-bottom: .5em;
+    width: 100%;
+}
+    h1 em {
+        font-family: 'IM Fell DW Pica', serif;
+        font-style: italic;
+    }
+
+.nav {
+    margin-bottom: 20px;
+}
+    .nav a {
+        color: #3d3934;
+        display: inline-block;
+        font-family: 'IM Fell DW Pica', serif;
+        padding-right: 20px;
+        text-decoration: none;
+    }
+    .nav a:hover,
+    .nav a.active {
+        text-decoration: underline;
+    }
+
+.itinerary h2,
+.content h2,
+#path-nav h2 {
+    font-family: 'IM Fell DW Pica SC', serif;
+    font-size: 32px;
+    font-weight: 400;
+    padding-top: 1.5em;
+    text-align: center;
+}
+    .content h2 {
+        margin-bottom: 1em;
+    }
+    #path-nav h2 {
+        font-size: 26px;
+        padding-top: .5em;
+        padding-bottom: .5em;
+    }
+.content {
+    font-family: 'IM Fell DW Pica', serif;
+    font-size: 20px;
+    padding-bottom: 32px;
+}
+    .content h3 {
+        margin-bottom: .5em;
+        font-size: 28px;
+        font-weight: 400;
+    }
+    .content h4 {
+        margin-bottom: .5em;
+        font-size: 22px;
+        font-weight: 400;
+    }
+    .content p {
+        line-height: 1.5em;
+        margin-bottom: 2em;
+    }
+    .content ul {
+        margin-bottom: 2em;
+    }
+        .content ul li {
+            line-height: 1.5em;
+            margin-bottom: .5em;
+        }
+
+.video {
+    background: rgba(45, 45, 45, .5);
+    margin-top: 40px;
+    margin-right: -20px;
+    margin-bottom: 40px;
+    margin-left: -20px;
+    padding: 20px 20px 10px;
+}
+    .video iframe {
+        height: 484px;
+        width: 100%;
+    }
+@media screen and (max-width: 940px) {
+    .video iframe {
+        height: 400px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .video iframe {
+        height: 320px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .video iframe {
+        height: 280px;
+    }
+}
+
+#map-container {
+    border-top: 3px solid #3d3934;
+    border-bottom: 3px solid #3d3934;
+    background: #e7dfcc;
+    clear: both;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 400px;
+}
+.melville-rome #map-container {
+    height: 700px;
+}
+
+.leaflet-popup-content dt {
+    font-weight: bold;
+}
+.leaflet-popup-content dd {
+    margin-bottom: 10px;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+table {
+    border-spacing: 2px;
+    border-collapse: separate;
+}
+    table.data {
+        margin-bottom: 40px;
+    }
+/* .data-table comes from the design framework established after this project started. */
+.data-table {
+    margin-bottom: 40px;
+    overflow-x: scroll;
+}
+    .data-table table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+        .data-table table th {
+                padding-top: 12px;
+                padding-right: 10px;
+                padding-bottom: 12px;
+                padding-left: 10px;
+                text-align: left;
+                vertical-align: bottom;
+            }
+        .data-table table tr.path-primary td,
+        .data-table table tr.path-alternate td {
+            /*display: none;*/
+        }
+        td.toggle span {
+            cursor: pointer; cursor: hand;
+        }
+.itinerary th {
+    font-family: 'IM Fell DW Pica SC', serif;
+    font-size: 16px;
+    font-weight: 400 !important; /* Not sure what's overriding this...*/
+}
+.itinerary td {
+    /*font-size: 13px;
+    padding: 4px;*/
+    font-size: 12px;
+    letter-spacing: .25px;
+    line-height: 1.25em;
+    padding-top: 12px;
+    padding-right: 10px;
+    padding-bottom: 12px;
+    padding-left: 10px;
+    vertical-align: top;
+}
+.itinerary tr.odd td {
+    background: #f2ebd3;
+}
+.itinerary h3,
+#path-nav > div h3 {
+    font-family: 'IM Fell DW Pica SC', serif;
+    font-size: 36px;
+    font-weight: 400;
+}
+    .leaflet-popup-content h3 {
+        color: #3d3934;
+        font-family: 'IM Fell DW Pica SC', serif;
+        font-weight: 400;
+    }
+    #path-nav > div h3 {
+        font-size: 20px;
+        padding-bottom: .5em;
+        text-align: center;
+    }
+    .leaflet-popup-content p {
+        color: #3d3934;
+        font-size: 12px !important;
+    }
+
+#stepper {
+    min-height: 140px;
+    position: relative;
+}
+#stepper h2 {
+    font-family: 'IM Fell DW Pica SC', serif;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+#stepper h2,
+#stepper p {
+    line-height: 1em;
+    text-align: center;
+}
+#stepper p {
+    font-family: 'IM Fell DW Pica', serif;
+    line-height: 1.2em;
+}
+#stepper a {
+    color: #333;
+    display: inline-block;
+    font-family: 'IM Fell DW Pica', serif;
+    font-size: 48px;
+    position: absolute;
+    text-decoration: none;
+    width: 30%;
+}
+#stepper a#step-prev {
+    left: 0px;
+    text-align: right;
+    top: 10px;
+}
+#stepper a#step-next {
+    right: 0px;
+    top: 10px;
+    text-align: left;
+}
+#stepper .buried-parish {
+    color: #d31603;
+    display: block;
+    font-size: 32px;
+    line-height: 1.2em;
+}
+
+#path-nav {
+    background: #ffffff;
+    padding-bottom: 30px;
+}
+    #path-nav > div {
+        float: left;
+        padding-right: 60px;
+        padding-bottom: 40px;
+        padding-left: 60px;
+    }
+    #path-nav > div {
+        width: 33%;
+    }
+    #path-nav > div:nth-of-type(2) {
+        width: 34%;
+    }
+        #path-nav > div > ul {
+            list-style: none;
+            padding-left: 60px;
+        }
+            #path-nav > div > ul li {
+                font-size: 14px;
+                line-height: 20px;
+            }
+
+.timeline {
+    border-bottom: 3px solid #3d3934;
+    height: 30px;
+    text-align: center;
+}
+.timeline-event {
+    display: inline-block;
+    padding-right: 1px;
+    padding-left: 1px;
+}
+.timeline-event:hover > span {
+    background-color: rgb(0, 116, 217);
+}
+.timeline-event > span {
+    background-color: #3d3934;
+    display: inline-block;
+    font-size: 0;
+    height: 26px;
+    line-height: 0;
+    width: 100%;
+}
+    .timeline-event > span.active {
+        background-color: #d31603;
+    }
+
+@media screen and (max-width: 940px) {
+    .year th {
+        padding-left: 10px;
+    }
+    .data-table table,
+    .data-table table thead,
+    .data-table table tbody,
+    .data-table table th,
+    .data-table table td,
+    .data-table table tr {
+        display: block;
+    }
+    .data-table table td:nth-of-type(2) {
+        display: none;
+    }
+        thead tr {
+            position: absolute;
+            top: -9999px;
+            left: -9999px;
+        }
+
+            .data-table table tr.even td {
+                background: none;
+            }
+            .data-table table tr.odd td {
+                background: #FFFFFF;
+            }
+            .data-table table tr th:first-child {
+                padding-left: 10px;
+            }
+            .data-table table tr td,
+            .data-table table tr td:first-child,
+            .data-table table tr td:last-child {
+                /* Behave  like a "row" */
+                border: none;
+                position: relative;
+                padding-left: 50%;
+                padding-right: 20px;
+            }
+            .data-table table td:before {
+                /* Now like a table header */
+                position: absolute;
+                /* Top/left values mimic padding */
+                top: 12px;
+                left: 10px;
+                width: 45%;
+                padding-right: 10px;
+                white-space: nowrap;
+            }
+            .data-table table tr.path-primary td,
+            .data-table table tr.path-alternate td {
+                display: none;
+            }
+    #path-nav > div,
+    #path-nav > div:nth-of-type(2) {
+        float: none;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+        width: 100%;
+    }
+        #path-nav > div > ul {
+            padding-left: 0;
+        }
+}
+@media screen and (max-width: 800px) {
+    .timeline {
+        display: none;
+    }
+    #stepper a {
+        width: 20%;
+    }
+    .content {
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 600px) {
+    body {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    .wrapper {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    .wrapper-content {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .logo-header,
+    h1, .nav {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    #stepper p {
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 40%;
+    }
+}
+
+.project-notes {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+    .project-notes p {
+        font-size: 12px;
+        line-height: 1.5em;
+        margin-bottom: 1em;
+    }
+span.code {
+    font-family: monospace;
+}
