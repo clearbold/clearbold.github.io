@@ -1,0 +1,24 @@
+[[redirects]]
+  from = "/craft"
+  to = "/"
+  force = true
+
+[[redirects]]
+  from = "/drupal"
+  to = "/"
+  force = true
+
+[[redirects]]
+  from = "/past-work"
+  to = "/"
+  force = true
+
+[[redirects]]
+  from = "/news"
+  to = "/"
+  force = true
+
+[[redirects]]
+  from = "/value"
+  to = "/"
+  force = true
