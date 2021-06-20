@@ -22,3 +22,8 @@
   from = "/value"
   to = "/"
   force = true
+
+[[redirects]]
+  from = "/fpf"
+  to = "/"
+  force = true
